@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "morenetherblocks:loose_soul_sand"
+    }
+  },
+  "result": {
+    "item": "minecraft:soul_sand"
+  }
+}

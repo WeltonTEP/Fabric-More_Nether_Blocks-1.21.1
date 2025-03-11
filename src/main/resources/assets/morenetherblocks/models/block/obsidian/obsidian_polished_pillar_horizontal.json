@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "morenetherblocks:block/obsidian_polished_pillar_top",
+    "side": "morenetherblocks:block/obsidian_polished_pillar"
+  }
+}

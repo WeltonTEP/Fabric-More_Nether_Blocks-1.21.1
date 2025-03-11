@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "morenetherblocks:block/warped_nylium_brick_cracked_slab"
+    },
+    "type=double": {
+      "model": "morenetherblocks:block/warped_nylium_bricks_cracked"
+    },
+    "type=top": {
+      "model": "morenetherblocks:block/warped_nylium_brick_cracked_slab_top"
+    }
+  }
+}

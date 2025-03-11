@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "morenetherblocks:block/netherite_scrap_block_top",
+    "side": "morenetherblocks:block/netherite_scrap_block"
+  }
+}

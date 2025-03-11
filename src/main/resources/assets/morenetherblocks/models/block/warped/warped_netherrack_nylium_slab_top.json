@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "morenetherblocks:block/warped_netherrack",
+    "top": "minecraft:block/warped_nylium",
+    "side": "morenetherblocks:block/warped_netherrack_nylium"
+  }
+}

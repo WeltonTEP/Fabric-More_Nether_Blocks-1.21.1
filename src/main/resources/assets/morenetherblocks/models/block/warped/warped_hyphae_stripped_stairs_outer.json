@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "morenetherblocks:block/stripped_warped_hyphae",
+    "top": "morenetherblocks:block/stripped_warped_hyphae",
+    "side": "morenetherblocks:block/stripped_warped_hyphae"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "morenetherblocks:block/warped_hyphae_stripped_slab"
+    },
+    "type=double": {
+      "model": "morenetherblocks:block/warped_hyphae_stripped"
+    },
+    "type=top": {
+      "model": "morenetherblocks:block/warped_hyphae_stripped_slab_top"
+    }
+  }
+}
