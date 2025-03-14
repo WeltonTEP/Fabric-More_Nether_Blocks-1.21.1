@@ -38,9 +38,13 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> BLACKSTONE_NETHERITE_ORE_PLACED_KEY = registryKey("blackstone_netherite_ore_placed");
     public static final RegistryKey<PlacedFeature> BLOODSTONE_COBBLED_ORE_PLACED_KEY = registryKey("bloodstone_cobbled_ore_placed");
     public static final RegistryKey<PlacedFeature> CRACKED_NETHER_BRICK_ORE_PLACED_KEY = registryKey("cracked_nether_brick_ore_placed");
-    public static final RegistryKey<PlacedFeature> CRACKED_NETHER_BRICK_ORE_PLACED_KEY2 = registryKey("cracked_nether_brick_ore_placed2");
-    public static final RegistryKey<PlacedFeature> CRACKED_NETHER_BRICK_ORE_PLACED_KEY3 = registryKey("cracked_nether_brick_ore_placed3");
-    public static final RegistryKey<PlacedFeature> CRACKED_NETHER_BRICK_ORE_PLACED_KEY4 = registryKey("cracked_nether_brick_ore_placed4");
+    public static final RegistryKey<PlacedFeature> CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_ORE_PLACED_KEY = registryKey("crimson_blackstone_polished_large_brick_ore_placed");
+    public static final RegistryKey<PlacedFeature> CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_CRACKED_ORE_PLACED_KEY = registryKey("crimson_blackstone_polished_large_brick_cracked_ore_placed");
+    public static final RegistryKey<PlacedFeature> CRIMSON_NETHER_BRICK_ORE_PLACED_KEY = registryKey("crimson_nether_brick_ore_placed");
+    public static final RegistryKey<PlacedFeature> CRIMSON_NETHER_BRICK_CRACKED_ORE_PLACED_KEY = registryKey("crimson_nether_brick_cracked_ore_placed");
+    public static final RegistryKey<PlacedFeature> RED_NETHER_BRICK_ORE_PLACED_KEY = registryKey("red_nether_brick_ore_placed");
+    public static final RegistryKey<PlacedFeature> CRIMSON_RED_NETHER_BRICK_ORE_PLACED_KEY = registryKey("crimson_red_nether_brick_ore_placed");
+    public static final RegistryKey<PlacedFeature> CRIMSON_RED_NETHER_BRICK_CRACKED_ORE_PLACED_KEY = registryKey("crimson_red_nether_brick_cracked_ore_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -146,15 +150,31 @@ public class ModPlacedFeatures {
                 ModOrePlacement.modifiersWithCount(256,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(1), YOffset.fixed(127)))
         );
-        register(context, CRACKED_NETHER_BRICK_ORE_PLACED_KEY2, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRACKED_NETHER_BRICK_ORE_KEY2),
+        register(context, CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(256,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(1), YOffset.fixed(127)))
         );
-        register(context, CRACKED_NETHER_BRICK_ORE_PLACED_KEY3, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRACKED_NETHER_BRICK_ORE_KEY3),
+        register(context, CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_CRACKED_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_CRACKED_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(256,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(1), YOffset.fixed(127)))
         );
-        register(context, CRACKED_NETHER_BRICK_ORE_PLACED_KEY4, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRACKED_NETHER_BRICK_ORE_KEY4),
+        register(context, CRIMSON_NETHER_BRICK_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRIMSON_NETHER_BRICK_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(256,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(1), YOffset.fixed(127)))
+        );
+        register(context, CRIMSON_NETHER_BRICK_CRACKED_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRIMSON_NETHER_BRICK_CRACKED_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(256,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(1), YOffset.fixed(127)))
+        );
+        register(context, RED_NETHER_BRICK_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RED_NETHER_BRICK_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(256,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(1), YOffset.fixed(127)))
+        );
+        register(context, CRIMSON_RED_NETHER_BRICK_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRIMSON_RED_NETHER_BRICK_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(256,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(1), YOffset.fixed(127)))
+        );
+        register(context, CRIMSON_RED_NETHER_BRICK_CRACKED_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRIMSON_RED_NETHER_BRICK_CRACKED_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(256,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(1), YOffset.fixed(127)))
         );

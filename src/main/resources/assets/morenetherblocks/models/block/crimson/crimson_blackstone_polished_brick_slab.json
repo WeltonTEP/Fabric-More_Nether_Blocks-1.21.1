@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "morenetherblocks:block/crimson/crimson_blackstone_polished_bricks",
-    "top": "morenetherblocks:block/crimson/crimson_blackstone_polished_bricks",
-    "side": "morenetherblocks:block/crimson/crimson_blackstone_polished_bricks"
-  }
-}

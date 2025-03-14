@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/slab",
   "textures": {
-    "bottom": "morenetherblocks:block/glowstone_polished_carved",
-    "top": "morenetherblocks:block/glowstone_polished_carved",
-    "side": "morenetherblocks:block/glowstone_polished_carved"
+    "bottom": "morenetherblocks:block/glowstone/glowstone_cobbled",
+    "side": "morenetherblocks:block/glowstone/glowstone_cobbled",
+    "top": "morenetherblocks:block/glowstone/glowstone_cobbled"
   }
 }

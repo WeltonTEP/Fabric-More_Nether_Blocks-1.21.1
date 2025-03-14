@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "morenetherblocks:block/glowstone_baked",
-    "top": "morenetherblocks:block/glowstone_smooth",
-    "side": "morenetherblocks:block/glowstone_smooth_cut"
-  }
-}

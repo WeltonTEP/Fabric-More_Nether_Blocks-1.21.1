@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "morenetherblocks:block/glowstone_polished_chiseled_top",
-    "side": "morenetherblocks:block/glowstone_polished_chiseled"
-  }
-}

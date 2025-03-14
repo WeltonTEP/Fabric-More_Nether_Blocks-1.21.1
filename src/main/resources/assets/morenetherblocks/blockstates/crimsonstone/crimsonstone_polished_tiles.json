@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "morenetherblocks:block/crimsonstone_polished_tiles" }
+    "": {
+      "model": "morenetherblocks:block/crimsonstone/crimsonstone_polished_tiles"
+    }
   }
 }

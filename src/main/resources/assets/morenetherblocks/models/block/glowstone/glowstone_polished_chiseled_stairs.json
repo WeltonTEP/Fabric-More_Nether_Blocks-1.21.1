@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "morenetherblocks:block/glowstone_polished_chiseled_top",
-    "top": "morenetherblocks:block/glowstone_polished_chiseled_top",
-    "side": "morenetherblocks:block/glowstone_polished_chiseled"
-  }
-}

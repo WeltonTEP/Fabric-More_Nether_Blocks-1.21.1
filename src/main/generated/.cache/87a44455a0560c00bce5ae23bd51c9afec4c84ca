@@ -1,4 +1,5 @@
-// 1.21.1	2025-03-10T17:57:12.9026641	MoreNetherBlocks/Tags for minecraft:block
-f3e3a1cdf0103c8f238bb15d518acffc832cbca0 data\minecraft\tags\block\mineable\pickaxe.json
-7697dfd5773b69eb27b0caacd1d3583f9de545e3 data\minecraft\tags\block\nylium.json
-5dbc5e551d2167046bcbbe8dd67ae62097620d67 data\minecraft\tags\block\walls.json
+// 1.21.1	2025-03-13T21:33:53.0317059	MoreNetherBlocks/Tags for minecraft:block
+ff324247dada16eb32c8305dfb5d59512bad0bbe data\minecraft\tags\block\mineable\pickaxe.json
+60ef653b4c2e5f6f50354e2d85be30549a7a6898 data\minecraft\tags\block\impermeable.json
+305331da85b283a50c432dd27dc6eee0d75f031e data\minecraft\tags\block\nylium.json
+d2bfa5d1b280df31fabae6968b8b8aa07943cd0c data\minecraft\tags\block\walls.json

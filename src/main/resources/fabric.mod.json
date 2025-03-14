@@ -3,7 +3,7 @@
 	"id": "morenetherblocks",
 	"version": "${version}",
 	"name": "MoreNetherBlocks",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Adds more nether blocks.",
 	"authors": [
 		"Me!"
 	],

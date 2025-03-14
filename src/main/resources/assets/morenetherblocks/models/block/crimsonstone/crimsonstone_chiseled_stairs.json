@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "morenetherblocks:block/crimsonstone_chiseled_top",
-    "top": "morenetherblocks:block/crimsonstone_chiseled_top",
-    "side": "morenetherblocks:block/crimsonstone_chiseled"
-  }
-}

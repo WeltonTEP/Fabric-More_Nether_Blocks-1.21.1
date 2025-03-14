@@ -14,44 +14,44 @@ import net.weltontep.morenetherblocks.block.custom.BlackstoneNyliumBrickBlock;
 
 public class CrimsonBlocks {
 
-    public static final Block CRIMSON_BLACKSTONE_POLISHED_BRICKS = registerBlock("crimson/crimson_blackstone_polished_bricks",
+    public static final Block CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICKS = registerBlock("crimson/crimson_blackstone_polished_large_bricks",
             new CrimsonBlackstoneBrickBlock(
                     AbstractBlock.Settings.create().strength(1.5f,6f)
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHER_GOLD_ORE)));
 
-    public static final Block CRIMSON_BLACKSTONE_POLISHED_BRICK_STAIRS = registerBlock("crimson/crimson_blackstone_polished_brick_stairs",
-            new StairsBlock(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_BRICKS.getDefaultState(), AbstractBlock.Settings.create().strength(2f,6f)
+    public static final Block CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_STAIRS = registerBlock("crimson/crimson_blackstone_polished_large_brick_stairs",
+            new StairsBlock(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICKS.getDefaultState(), AbstractBlock.Settings.create().strength(2f,6f)
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHER_GOLD_ORE)));
 
-    public static final Block CRIMSON_BLACKSTONE_POLISHED_BRICK_SLAB = registerBlock("crimson/crimson_blackstone_polished_brick_slab",
+    public static final Block CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_SLAB = registerBlock("crimson/crimson_blackstone_polished_large_brick_slab",
             new SlabBlock(AbstractBlock.Settings.create().strength(2f,6f)
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHER_GOLD_ORE)));
 
-    public static final Block CRIMSON_BLACKSTONE_POLISHED_BRICK_WALL = registerBlock("crimson/crimson_blackstone_polished_brick_wall",
+    public static final Block CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_WALL = registerBlock("crimson/crimson_blackstone_polished_large_brick_wall",
             new WallBlock(AbstractBlock.Settings.create().strength(2f,6f)
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHER_GOLD_ORE)));
 
-    public static final Block CRIMSON_BLACKSTONE_POLISHED_BRICKS_CRACKED = registerBlock("crimson/crimson_blackstone_polished_bricks_cracked",
+    public static final Block CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICKS_CRACKED = registerBlock("crimson/crimson_blackstone_polished_large_bricks_cracked",
             new Block(AbstractBlock.Settings.create().strength(1.5f,6f)
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHER_GOLD_ORE)));
 
-    public static final Block CRIMSON_BLACKSTONE_POLISHED_BRICK_CRACKED_STAIRS = registerBlock("crimson/crimson_blackstone_polished_brick_cracked_stairs",
-            new StairsBlock(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_BRICKS_CRACKED.getDefaultState(), AbstractBlock.Settings.create().strength(2f,6f)
+    public static final Block CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_CRACKED_STAIRS = registerBlock("crimson/crimson_blackstone_polished_large_brick_cracked_stairs",
+            new StairsBlock(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICKS_CRACKED.getDefaultState(), AbstractBlock.Settings.create().strength(2f,6f)
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHER_GOLD_ORE)));
 
-    public static final Block CRIMSON_BLACKSTONE_POLISHED_BRICK_CRACKED_SLAB = registerBlock("crimson/crimson_blackstone_polished_brick_cracked_slab",
+    public static final Block CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_CRACKED_SLAB = registerBlock("crimson/crimson_blackstone_polished_large_brick_cracked_slab",
             new SlabBlock(AbstractBlock.Settings.create().strength(2f,6f)
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHER_GOLD_ORE)));
 
-    public static final Block CRIMSON_BLACKSTONE_POLISHED_BRICK_CRACKED_WALL = registerBlock("crimson/crimson_blackstone_polished_brick_cracked_wall",
+    public static final Block CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_CRACKED_WALL = registerBlock("crimson/crimson_blackstone_polished_large_brick_cracked_wall",
             new WallBlock(AbstractBlock.Settings.create().strength(2f,6f)
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHER_GOLD_ORE)));
 
-    public static final Block CRIMSON_BLACKSTONE_POLISHED_NYLIUM_BRICKS = registerBlock("crimson/crimson_blackstone_polished_nylium_bricks",
+    public static final Block CRIMSON_BLACKSTONE_POLISHED_LARGE_NYLIUM_BRICKS = registerBlock("crimson/crimson_blackstone_polished_large_nylium_bricks",
             new BlackstoneNyliumBrickBlock(AbstractBlock.Settings.create().strength(1.5f,6f)
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHER_GOLD_ORE)));
 
-    public static final Block CRIMSON_BLACKSTONE_POLISHED_NYLIUM_BRICKS_CRACKED = registerBlock("crimson/crimson_blackstone_polished_nylium_bricks_cracked",
+    public static final Block CRIMSON_BLACKSTONE_POLISHED_LARGE_NYLIUM_BRICKS_CRACKED = registerBlock("crimson/crimson_blackstone_polished_large_nylium_bricks_cracked",
             new Block(AbstractBlock.Settings.create().strength(1.5f,6f)
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHER_GOLD_ORE)));
 
@@ -60,7 +60,7 @@ public class CrimsonBlocks {
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHER_BRICKS)));
 
     public static final Block CRIMSON_BLUE_NETHER_BRICK_STAIRS = registerBlock("crimson/crimson_blue_nether_brick_stairs",
-            new StairsBlock(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_BRICKS.getDefaultState(), AbstractBlock.Settings.create().strength(2f,6f)
+            new StairsBlock(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICKS.getDefaultState(), AbstractBlock.Settings.create().strength(2f,6f)
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHER_BRICKS)));
 
     public static final Block CRIMSON_BLUE_NETHER_BRICK_SLAB = registerBlock("crimson/crimson_blue_nether_brick_slab",
@@ -76,7 +76,7 @@ public class CrimsonBlocks {
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHER_BRICKS)));
 
     public static final Block CRIMSON_BLUE_NETHER_BRICK_CRACKED_STAIRS = registerBlock("crimson/crimson_blue_nether_brick_cracked_stairs",
-            new StairsBlock(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_BRICKS_CRACKED.getDefaultState(), AbstractBlock.Settings.create().strength(2f,6f)
+            new StairsBlock(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICKS_CRACKED.getDefaultState(), AbstractBlock.Settings.create().strength(2f,6f)
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHER_BRICKS)));
 
     public static final Block CRIMSON_BLUE_NETHER_BRICK_CRACKED_SLAB = registerBlock("crimson/crimson_blue_nether_brick_cracked_slab",
@@ -100,7 +100,7 @@ public class CrimsonBlocks {
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHER_BRICKS)));
 
     public static final Block CRIMSON_NETHER_BRICK_STAIRS = registerBlock("crimson/crimson_nether_brick_stairs",
-            new StairsBlock(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_BRICKS.getDefaultState(), AbstractBlock.Settings.create().strength(2f,6f)
+            new StairsBlock(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICKS.getDefaultState(), AbstractBlock.Settings.create().strength(2f,6f)
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHER_BRICKS)));
 
     public static final Block CRIMSON_NETHER_BRICK_SLAB = registerBlock("crimson/crimson_nether_brick_slab",
@@ -116,7 +116,7 @@ public class CrimsonBlocks {
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHER_BRICKS)));
 
     public static final Block CRIMSON_NETHER_BRICK_CRACKED_STAIRS = registerBlock("crimson/crimson_nether_brick_cracked_stairs",
-            new StairsBlock(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_BRICKS_CRACKED.getDefaultState(), AbstractBlock.Settings.create().strength(2f,6f)
+            new StairsBlock(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICKS_CRACKED.getDefaultState(), AbstractBlock.Settings.create().strength(2f,6f)
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHER_BRICKS)));
 
     public static final Block CRIMSON_NETHER_BRICK_CRACKED_SLAB = registerBlock("crimson/crimson_nether_brick_cracked_slab",
@@ -140,7 +140,7 @@ public class CrimsonBlocks {
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHER_BRICKS)));
 
     public static final Block CRIMSON_RED_NETHER_BRICK_STAIRS = registerBlock("crimson/crimson_red_nether_brick_stairs",
-            new StairsBlock(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_BRICKS.getDefaultState(), AbstractBlock.Settings.create().strength(2f,6f)
+            new StairsBlock(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICKS.getDefaultState(), AbstractBlock.Settings.create().strength(2f,6f)
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHER_BRICKS)));
 
     public static final Block CRIMSON_RED_NETHER_BRICK_SLAB = registerBlock("crimson/crimson_red_nether_brick_slab",
@@ -156,7 +156,7 @@ public class CrimsonBlocks {
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHER_BRICKS)));
 
     public static final Block CRIMSON_RED_NETHER_BRICK_CRACKED_STAIRS = registerBlock("crimson/crimson_red_nether_brick_cracked_stairs",
-            new StairsBlock(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_BRICKS_CRACKED.getDefaultState(), AbstractBlock.Settings.create().strength(2f,6f)
+            new StairsBlock(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICKS_CRACKED.getDefaultState(), AbstractBlock.Settings.create().strength(2f,6f)
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHER_BRICKS)));
 
     public static final Block CRIMSON_RED_NETHER_BRICK_CRACKED_SLAB = registerBlock("crimson/crimson_red_nether_brick_cracked_slab",

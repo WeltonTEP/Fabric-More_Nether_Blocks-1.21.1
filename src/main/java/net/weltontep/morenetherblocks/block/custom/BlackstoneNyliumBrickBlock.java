@@ -32,7 +32,7 @@ public class BlackstoneNyliumBrickBlock extends NyliumBlock implements Fertiliza
     @Override
     protected void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
         if (!stayAlive(state, world, pos)) {
-            world.setBlockState(pos, CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_BRICKS.getDefaultState());
+            world.setBlockState(pos, CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICKS.getDefaultState());
         }
     }
 
@@ -52,7 +52,7 @@ public class BlackstoneNyliumBrickBlock extends NyliumBlock implements Fertiliza
         BlockPos blockPos = pos.up();
         ChunkGenerator chunkGenerator = world.getChunkManager().getChunkGenerator();
         Registry<ConfiguredFeature<?, ?>> registry = world.getRegistryManager().get(RegistryKeys.CONFIGURED_FEATURE);
-        if (blockState.isOf(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_NYLIUM_BRICKS)) {
+        if (blockState.isOf(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_NYLIUM_BRICKS)) {
             this.generate(registry, NetherConfiguredFeatures.CRIMSON_FOREST_VEGETATION_BONEMEAL, world, chunkGenerator, random, blockPos);
         } else if (blockState.isOf(Blocks.WARPED_NYLIUM)) {
             this.generate(registry, NetherConfiguredFeatures.WARPED_FOREST_VEGETATION_BONEMEAL, world, chunkGenerator, random, blockPos);

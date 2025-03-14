@@ -2,10 +2,7 @@ package net.weltontep.morenetherblocks;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.weltontep.morenetherblocks.block.BasaltBlocks;
-import net.weltontep.morenetherblocks.block.BlackstoneBlocks;
-import net.weltontep.morenetherblocks.block.BloodstoneBlocks;
-import net.weltontep.morenetherblocks.block.CrimsonBlocks;
+import net.weltontep.morenetherblocks.block.*;
 import net.weltontep.morenetherblocks.item.ModItemGroups;
 import net.weltontep.morenetherblocks.item.ModItems;
 import net.weltontep.morenetherblocks.world.gen.ModWorldGeneration;
@@ -28,6 +25,8 @@ public class MoreNetherBlocks implements ModInitializer {
 		BlackstoneBlocks.registerModBlocks();
 		BloodstoneBlocks.registerModBlocks();
 		CrimsonBlocks.registerModBlocks();
+		CrimsonstoneBlocks.registerModBlocks();
+		GlowstoneBlocks.registerModBlocks();
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.

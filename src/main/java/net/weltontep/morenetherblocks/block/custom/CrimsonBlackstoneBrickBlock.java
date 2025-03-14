@@ -41,7 +41,7 @@ public class CrimsonBlackstoneBrickBlock extends NetherrackBlock implements Fert
 
         for (BlockPos blockPos : BlockPos.iterate(pos.add(-1, -1, -1), pos.add(1, 1, 1))) {
             BlockState blockState = world.getBlockState(blockPos);
-            if (blockState.isOf(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_BRICKS)) {
+            if (blockState.isOf(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICKS)) {
                 bl2 = true;
             }
 
@@ -55,11 +55,11 @@ public class CrimsonBlackstoneBrickBlock extends NetherrackBlock implements Fert
         }
 
         if (bl2 && bl) {
-            world.setBlockState(pos, random.nextBoolean() ? CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_BRICKS.getDefaultState() : CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_NYLIUM_BRICKS.getDefaultState(), Block.NOTIFY_ALL);
+            world.setBlockState(pos, random.nextBoolean() ? CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICKS.getDefaultState() : CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_NYLIUM_BRICKS.getDefaultState(), Block.NOTIFY_ALL);
         } else if (bl2) {
-            world.setBlockState(pos, CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_NYLIUM_BRICKS.getDefaultState(), Block.NOTIFY_ALL);
+            world.setBlockState(pos, CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_NYLIUM_BRICKS.getDefaultState(), Block.NOTIFY_ALL);
         } else if (bl) {
-            world.setBlockState(pos, CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_NYLIUM_BRICKS.getDefaultState(), Block.NOTIFY_ALL);
+            world.setBlockState(pos, CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_NYLIUM_BRICKS.getDefaultState(), Block.NOTIFY_ALL);
         }
     }
 

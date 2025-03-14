@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "morenetherblocks:block/crimsonstone_polished_bricks",
-    "top": "morenetherblocks:block/crimsonstone_polished_bricks",
-    "side": "morenetherblocks:block/crimsonstone_polished_bricks"
-  }
-}
