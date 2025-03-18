@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/wall_inventory",
-  "textures": {
-    "wall": "morenetherblocks:block/glowstone/glowstone_smooth_cracked"
-  }
-}

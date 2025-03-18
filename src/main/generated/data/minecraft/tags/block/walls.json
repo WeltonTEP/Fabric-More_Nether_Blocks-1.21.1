@@ -191,8 +191,6 @@
     "morenetherblocks:glowstone/glowstone_wall",
     "morenetherblocks:glowstone/glowstone_cobbled_wall",
     "morenetherblocks:glowstone/glowstone_baked_wall",
-    "morenetherblocks:glowstone/glowstone_smooth_wall",
-    "morenetherblocks:glowstone/glowstone_smooth_cracked_wall",
     "morenetherblocks:glowstone/glowstone_polished_wall",
     "morenetherblocks:glowstone/glowstone_polished_large_brick_wall",
     "morenetherblocks:glowstone/glowstone_polished_large_brick_cracked_wall",
@@ -233,6 +231,10 @@
     "morenetherblocks:glowstone/glowstone_polished_chiseled_pillar_wall",
     "morenetherblocks:glowstone/glowstone_polished_chiseled_ornate_wall",
     "morenetherblocks:glowstone/glowstone_polished_chiseled_ornate2_wall",
-    "morenetherblocks:glowstone/glowstone_polished_chiseled_pyramid_wall"
+    "morenetherblocks:glowstone/glowstone_polished_chiseled_pyramid_wall",
+    "morenetherblocks:misc/blue_nether_brick_wall",
+    "morenetherblocks:misc/blue_nether_brick_cracked_wall",
+    "morenetherblocks:misc/nether_brick_cracked_wall",
+    "morenetherblocks:misc/red_nether_brick_cracked_wall"
   ]
 }

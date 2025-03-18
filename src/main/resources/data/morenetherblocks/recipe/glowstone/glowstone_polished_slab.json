@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "morenetherblocks:glowstone/glowstone"
+      "item": "morenetherblocks:glowstone/glowstone_polished"
     }
   },
   "pattern": [
@@ -11,6 +11,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "morenetherblocks:glowstone/glowstone_slab"
+    "id": "morenetherblocks:glowstone/glowstone_polished_slab"
   }
 }

@@ -35,7 +35,7 @@
                   "condition": "minecraft:survives_explosion"
                 }
               ],
-              "name": "morenetherblocks:bloodstone/bloodstone_polished_cut_cracked_wall"
+              "name": "morenetherblocks:bloodstone/bloodstone_cobbled_wall"
             }
           ]
         }

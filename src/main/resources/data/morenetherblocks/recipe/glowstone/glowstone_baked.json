@@ -4,9 +4,9 @@
   "cookingtime": 200,
   "experience": 0.1,
   "ingredient": {
-    "item": "morenetherblocks:glowstone/glow_sand"
+    "item": "minecraft:glowstone"
   },
   "result": {
-    "id": "morenetherblocks:glowstone/glowstone_glass"
+    "id": "morenetherblocks:glowstone/glowstone_baked"
   }
 }

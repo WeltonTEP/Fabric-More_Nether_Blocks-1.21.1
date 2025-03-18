@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/fence_post",
   "textures": {
-    "texture": "morenetherblocks:block/blue_nether_bricks"
+    "texture": "morenetherblocks:block/misc/blue_nether_bricks"
   }
 }

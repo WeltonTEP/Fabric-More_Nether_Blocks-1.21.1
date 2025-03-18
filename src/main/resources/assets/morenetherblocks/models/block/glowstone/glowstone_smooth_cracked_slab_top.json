@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "morenetherblocks:block/glowstone/glowstone_smooth_cracked",
-    "side": "morenetherblocks:block/glowstone/glowstone_smooth_cracked",
-    "top": "morenetherblocks:block/glowstone/glowstone_smooth_cracked"
-  }
-}

@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/inner_stairs",
   "textures": {
-    "bottom": "morenetherblocks:block/warped_blue_nether_bricks_cracked",
+    "bottom": "morenetherblocks:block/warped_charcoal_planks_cracked",
     "top": "minecraft:block/warped_nylium",
     "side": "morenetherblocks:block/warped_blue_nylium_bricks_cracked"
   }

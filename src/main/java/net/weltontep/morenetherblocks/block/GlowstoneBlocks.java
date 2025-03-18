@@ -95,38 +95,6 @@ public class GlowstoneBlocks {
             new WallBlock(AbstractBlock.Settings.create().strength(1f)
                     .requiresTool().luminance(state -> 15).sounds(BlockSoundGroup.NYLIUM)));
 
-    public static final Block GLOWSTONE_SMOOTH = registerBlock("glowstone/glowstone_smooth",
-            new Block(AbstractBlock.Settings.create().strength(1.5f,6f)
-                    .requiresTool().luminance(state -> 15).sounds(BlockSoundGroup.NYLIUM)));
-
-    public static final Block GLOWSTONE_SMOOTH_STAIRS = registerBlock("glowstone/glowstone_smooth_stairs",
-            new StairsBlock(GlowstoneBlocks.GLOWSTONE_SMOOTH.getDefaultState(), AbstractBlock.Settings.create().strength(1.5f,6f)
-                    .requiresTool().luminance(state -> 15).sounds(BlockSoundGroup.NYLIUM)));
-
-    public static final Block GLOWSTONE_SMOOTH_SLAB = registerBlock("glowstone/glowstone_smooth_slab",
-            new SlabBlock(AbstractBlock.Settings.create().strength(1.5f,6f)
-                    .requiresTool().luminance(state -> 15).sounds(BlockSoundGroup.NYLIUM)));
-
-    public static final Block GLOWSTONE_SMOOTH_WALL = registerBlock("glowstone/glowstone_smooth_wall",
-            new WallBlock(AbstractBlock.Settings.create().strength(1.5f,6f)
-                    .requiresTool().luminance(state -> 15).sounds(BlockSoundGroup.NYLIUM)));
-
-    public static final Block GLOWSTONE_SMOOTH_CRACKED = registerBlock("glowstone/glowstone_smooth_cracked",
-            new Block(AbstractBlock.Settings.create().strength(1.5f,6f)
-                    .requiresTool().luminance(state -> 15).sounds(BlockSoundGroup.NYLIUM)));
-
-    public static final Block GLOWSTONE_SMOOTH_CRACKED_STAIRS = registerBlock("glowstone/glowstone_smooth_cracked_stairs",
-            new StairsBlock(GlowstoneBlocks.GLOWSTONE_SMOOTH_CRACKED.getDefaultState(), AbstractBlock.Settings.create().strength(1.5f,6f)
-                    .requiresTool().luminance(state -> 15).sounds(BlockSoundGroup.NYLIUM)));
-
-    public static final Block GLOWSTONE_SMOOTH_CRACKED_SLAB = registerBlock("glowstone/glowstone_smooth_cracked_slab",
-            new SlabBlock(AbstractBlock.Settings.create().strength(1.5f,6f)
-                    .requiresTool().luminance(state -> 15).sounds(BlockSoundGroup.NYLIUM)));
-
-    public static final Block GLOWSTONE_SMOOTH_CRACKED_WALL = registerBlock("glowstone/glowstone_smooth_cracked_wall",
-            new WallBlock(AbstractBlock.Settings.create().strength(1.5f,6f)
-                    .requiresTool().luminance(state -> 15).sounds(BlockSoundGroup.NYLIUM)));
-
     public static final Block GLOWSTONE_POLISHED_LARGE_BRICKS = registerBlock("glowstone/glowstone_polished_large_bricks",
             new Block(AbstractBlock.Settings.create().strength(1.5f,6f)
                     .requiresTool().luminance(state -> 15).sounds(BlockSoundGroup.NYLIUM)));

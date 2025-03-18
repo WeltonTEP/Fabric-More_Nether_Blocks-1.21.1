@@ -175,6 +175,22 @@ public class CrimsonBlocks {
             new Block(AbstractBlock.Settings.create().strength(1.5f,6f)
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHER_BRICKS)));
 
+    public static final Block CRIMSON_NETHERRACK = registerBlock("crimson/crimson_netherrack",
+            new NetherrackBlock(AbstractBlock.Settings.create().strength(0.4F)
+                    .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NYLIUM)));
+
+    public static final Block CRIMSON_NETHERRACK_CRACKED = registerBlock("crimson/crimson_netherrack_cracked",
+            new NetherrackBlock(AbstractBlock.Settings.create().strength(0.4F)
+                    .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NYLIUM)));
+
+    public static final Block CRIMSON_NETHERRACK_NYLIUM = registerBlock("crimson/crimson_netherrack_nylium",
+            new NyliumBlock(AbstractBlock.Settings.create().strength(0.4F)
+                    .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NYLIUM)));
+
+    public static final Block CRIMSON_NETHERRACK_NYLIUM_CRACKED = registerBlock("crimson/crimson_netherrack_nylium_cracked",
+            new NyliumBlock(AbstractBlock.Settings.create().strength(0.4F)
+                    .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NYLIUM)));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(MoreNetherBlocks.MOD_ID, name), block);

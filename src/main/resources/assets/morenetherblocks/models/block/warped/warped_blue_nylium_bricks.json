@@ -2,7 +2,7 @@
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
     "top": "minecraft:block/warped_nylium",
-    "bottom": "morenetherblocks:block/warped_blue_nether_bricks",
+    "bottom": "morenetherblocks:block/warped_charcoal_planks",
     "side": "morenetherblocks:block/warped_blue_nylium_bricks"
   }
 }

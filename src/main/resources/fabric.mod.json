@@ -18,6 +18,9 @@
 		"main": [
 			"net.weltontep.morenetherblocks.MoreNetherBlocks"
 		],
+		"client": [
+			"net.weltontep.morenetherblocks.MoreNetherBlocksClient"
+		],
 		"fabric-datagen": [
 			"net.weltontep.morenetherblocks.MoreNetherBlocksDataGenerator"
 		]

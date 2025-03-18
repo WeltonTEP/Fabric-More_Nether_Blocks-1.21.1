@@ -35,7 +35,7 @@
                   "condition": "minecraft:survives_explosion"
                 }
               ],
-              "name": "morenetherblocks:crimsonstone/crimsonstone_polished_cut_cracked_stairs"
+              "name": "morenetherblocks:crimsonstone/crimsonstone_cobbled_stairs"
             }
           ]
         }

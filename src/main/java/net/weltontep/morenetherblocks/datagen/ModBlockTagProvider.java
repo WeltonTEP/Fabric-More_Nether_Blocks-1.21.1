@@ -603,6 +603,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         .add(CrimsonBlocks.CRIMSON_RED_NETHER_BRICK_CRACKED_WALL)
         .add(CrimsonBlocks.CRIMSON_RED_NYLIUM_BRICKS)
         .add(CrimsonBlocks.CRIMSON_RED_NYLIUM_BRICKS_CRACKED)
+        .add(CrimsonBlocks.CRIMSON_NETHERRACK)
+        .add(CrimsonBlocks.CRIMSON_NETHERRACK_CRACKED)
+        .add(CrimsonBlocks.CRIMSON_NETHERRACK_NYLIUM)
+        .add(CrimsonBlocks.CRIMSON_NETHERRACK_NYLIUM_CRACKED)
         .add(CrimsonstoneBlocks.CRIMSONSTONE_COBBLED)
         .add(CrimsonstoneBlocks.CRIMSONSTONE_COBBLED_STAIRS)
         .add(CrimsonstoneBlocks.CRIMSONSTONE_COBBLED_SLAB)
@@ -783,6 +787,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         .add(CrimsonstoneBlocks.CRIMSONSTONE_POLISHED_CHISELED_PYRAMID_STAIRS)
         .add(CrimsonstoneBlocks.CRIMSONSTONE_POLISHED_CHISELED_PYRAMID_SLAB)
         .add(CrimsonstoneBlocks.CRIMSONSTONE_POLISHED_CHISELED_PYRAMID_WALL)
+        .add(GlowstoneBlocks.GLOWSTONE_ORE)
         .add(GlowstoneBlocks.GLOWSTONE_COBBLED)
         .add(GlowstoneBlocks.GLOWSTONE_COBBLED_STAIRS)
         .add(GlowstoneBlocks.GLOWSTONE_COBBLED_SLAB)
@@ -798,14 +803,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         .add(GlowstoneBlocks.GLOWSTONE_POLISHED_STAIRS)
         .add(GlowstoneBlocks.GLOWSTONE_POLISHED_SLAB)
         .add(GlowstoneBlocks.GLOWSTONE_POLISHED_WALL)
-        .add(GlowstoneBlocks.GLOWSTONE_SMOOTH)
-        .add(GlowstoneBlocks.GLOWSTONE_SMOOTH_STAIRS)
-        .add(GlowstoneBlocks.GLOWSTONE_SMOOTH_SLAB)
-        .add(GlowstoneBlocks.GLOWSTONE_SMOOTH_WALL)
-        .add(GlowstoneBlocks.GLOWSTONE_SMOOTH_CRACKED)
-        .add(GlowstoneBlocks.GLOWSTONE_SMOOTH_CRACKED_STAIRS)
-        .add(GlowstoneBlocks.GLOWSTONE_SMOOTH_CRACKED_SLAB)
-        .add(GlowstoneBlocks.GLOWSTONE_SMOOTH_CRACKED_WALL)
         .add(GlowstoneBlocks.GLOWSTONE_POLISHED_LARGE_BRICKS)
         .add(GlowstoneBlocks.GLOWSTONE_POLISHED_LARGE_BRICK_STAIRS)
         .add(GlowstoneBlocks.GLOWSTONE_POLISHED_LARGE_BRICK_SLAB)
@@ -965,7 +962,37 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         .add(GlowstoneBlocks.GLOWSTONE_POLISHED_CHISELED_PYRAMID)
         .add(GlowstoneBlocks.GLOWSTONE_POLISHED_CHISELED_PYRAMID_STAIRS)
         .add(GlowstoneBlocks.GLOWSTONE_POLISHED_CHISELED_PYRAMID_SLAB)
-        .add(GlowstoneBlocks.GLOWSTONE_POLISHED_CHISELED_PYRAMID_WALL);
+        .add(GlowstoneBlocks.GLOWSTONE_POLISHED_CHISELED_PYRAMID_WALL)
+        .add(MiscBlocks.BLUE_NETHER_BRICKS)
+        .add(MiscBlocks.BLUE_NETHER_BRICK_STAIRS)
+        .add(MiscBlocks.BLUE_NETHER_BRICK_SLAB)
+        .add(MiscBlocks.BLUE_NETHER_BRICK_WALL)
+        .add(MiscBlocks.BLUE_NETHER_BRICK_FENCE)
+        .add(MiscBlocks.BLUE_NETHER_BRICKS_CRACKED)
+        .add(MiscBlocks.BLUE_NETHER_BRICK_CRACKED_STAIRS)
+        .add(MiscBlocks.BLUE_NETHER_BRICK_CRACKED_SLAB)
+        .add(MiscBlocks.BLUE_NETHER_BRICK_CRACKED_WALL)
+        .add(MiscBlocks.BLUE_NETHER_BRICK_CRACKED_FENCE)
+        .add(MiscBlocks.BLUE_NETHER_BRICKS_CHISELED)
+        .add(MiscBlocks.NETHER_BRICK_CRACKED_STAIRS)
+        .add(MiscBlocks.NETHER_BRICK_CRACKED_SLAB)
+        .add(MiscBlocks.NETHER_BRICK_CRACKED_WALL)
+        .add(MiscBlocks.NETHER_BRICK_CRACKED_FENCE)
+        .add(MiscBlocks.RED_NETHER_BRICK_FENCE)
+        .add(MiscBlocks.RED_NETHER_BRICKS_CRACKED)
+        .add(MiscBlocks.RED_NETHER_BRICK_CRACKED_STAIRS)
+        .add(MiscBlocks.RED_NETHER_BRICK_CRACKED_SLAB)
+        .add(MiscBlocks.RED_NETHER_BRICK_CRACKED_WALL)
+        .add(MiscBlocks.RED_NETHER_BRICK_CRACKED_FENCE)
+        .add(MiscBlocks.RED_NETHER_BRICKS_CHISELED)
+        .add(MiscBlocks.CHARCOAL_LOG)
+        .add(MiscBlocks.CHARCOAL_WOOD)
+        .add(MiscBlocks.CHARCOAL_LOG_STRIPPED)
+        .add(MiscBlocks.CHARCOAL_WOOD_STRIPPED)
+        .add(MiscBlocks.CHARCOAL_PLANKS)
+        .add(MiscBlocks.CHARCOAL_SLAB)
+        .add(MiscBlocks.CHARCOAL_STAIRS)
+        .add(MiscBlocks.CHARCOAL_FENCE);
 
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(BasaltBlocks.BASALT_COBBLED_WALL)
@@ -1159,8 +1186,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(GlowstoneBlocks.GLOWSTONE_WALL)
                 .add(GlowstoneBlocks.GLOWSTONE_COBBLED_WALL)
                 .add(GlowstoneBlocks.GLOWSTONE_BAKED_WALL)
-                .add(GlowstoneBlocks.GLOWSTONE_SMOOTH_WALL)
-                .add(GlowstoneBlocks.GLOWSTONE_SMOOTH_CRACKED_WALL)
                 .add(GlowstoneBlocks.GLOWSTONE_POLISHED_WALL)
                 .add(GlowstoneBlocks.GLOWSTONE_POLISHED_LARGE_BRICK_WALL)
                 .add(GlowstoneBlocks.GLOWSTONE_POLISHED_LARGE_BRICK_CRACKED_WALL)
@@ -1201,7 +1226,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(GlowstoneBlocks.GLOWSTONE_POLISHED_CHISELED_PILLAR_WALL)
                 .add(GlowstoneBlocks.GLOWSTONE_POLISHED_CHISELED_ORNATE_WALL)
                 .add(GlowstoneBlocks.GLOWSTONE_POLISHED_CHISELED_ORNATE2_WALL)
-                .add(GlowstoneBlocks.GLOWSTONE_POLISHED_CHISELED_PYRAMID_WALL);
+                .add(GlowstoneBlocks.GLOWSTONE_POLISHED_CHISELED_PYRAMID_WALL)
+                .add(MiscBlocks.BLUE_NETHER_BRICK_WALL)
+                .add(MiscBlocks.BLUE_NETHER_BRICK_CRACKED_WALL)
+                .add(MiscBlocks.NETHER_BRICK_CRACKED_WALL)
+                .add(MiscBlocks.RED_NETHER_BRICK_CRACKED_WALL);
 
         getOrCreateTagBuilder(BlockTags.NYLIUM)
                 .add(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_NYLIUM_BRICKS)
@@ -1211,11 +1240,43 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(CrimsonBlocks.CRIMSON_NYLIUM_BRICKS)
                 .add(CrimsonBlocks.CRIMSON_NYLIUM_BRICKS_CRACKED)
                 .add(CrimsonBlocks.CRIMSON_RED_NYLIUM_BRICKS)
-                .add(CrimsonBlocks.CRIMSON_RED_NYLIUM_BRICKS_CRACKED);
+                .add(CrimsonBlocks.CRIMSON_RED_NYLIUM_BRICKS_CRACKED)
+                .add(CrimsonBlocks.CRIMSON_NETHERRACK_NYLIUM)
+                .add(CrimsonBlocks.CRIMSON_NETHERRACK_NYLIUM_CRACKED);
 
         getOrCreateTagBuilder(BlockTags.IMPERMEABLE)
                 .add(GlowstoneBlocks.GLOWSTONE_GLASS);
 
-        }
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(MiscBlocks.CHARCOAL_LOG)
+                .add(MiscBlocks.CHARCOAL_WOOD)
+                .add(MiscBlocks.CHARCOAL_LOG_STRIPPED)
+                .add(MiscBlocks.CHARCOAL_WOOD_STRIPPED);
+
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(MiscBlocks.CHARCOAL_LOG)
+                .add(MiscBlocks.CHARCOAL_WOOD)
+                .add(MiscBlocks.CHARCOAL_LOG_STRIPPED)
+                .add(MiscBlocks.CHARCOAL_WOOD_STRIPPED)
+                .add(MiscBlocks.CHARCOAL_PLANKS)
+                .add(MiscBlocks.CHARCOAL_SLAB)
+                .add(MiscBlocks.CHARCOAL_STAIRS)
+                .add(MiscBlocks.CHARCOAL_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(MiscBlocks.BLUE_NETHER_BRICK_FENCE)
+                .add(MiscBlocks.BLUE_NETHER_BRICK_CRACKED_FENCE)
+                .add(MiscBlocks.NETHER_BRICK_CRACKED_FENCE)
+                .add(MiscBlocks.RED_NETHER_BRICK_FENCE)
+                .add(MiscBlocks.RED_NETHER_BRICK_CRACKED_FENCE)
+                .add(MiscBlocks.CHARCOAL_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.PLANKS)
+                .add(MiscBlocks.CHARCOAL_PLANKS);
+
+        getOrCreateTagBuilder(BlockTags.DIRT)
+                .add(Blocks.SOUL_SOIL);
+
+    }
 
     }

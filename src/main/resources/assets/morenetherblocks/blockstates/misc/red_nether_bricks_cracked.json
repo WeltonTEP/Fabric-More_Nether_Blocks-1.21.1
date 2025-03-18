@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "model": "morenetherblocks:block/red_nether_bricks_cracked" }
+    "": { "model": "morenetherblocks:block/misc/red_nether_bricks_cracked" }
   }
 }

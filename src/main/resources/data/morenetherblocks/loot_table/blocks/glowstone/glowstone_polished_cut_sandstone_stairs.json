@@ -35,7 +35,7 @@
                   "condition": "minecraft:survives_explosion"
                 }
               ],
-              "name": "morenetherblocks:glowstone/glowstone_polished_cut_cracked_stairs"
+              "name": "morenetherblocks:glowstone/glowstone_cobbled_stairs"
             }
           ]
         }

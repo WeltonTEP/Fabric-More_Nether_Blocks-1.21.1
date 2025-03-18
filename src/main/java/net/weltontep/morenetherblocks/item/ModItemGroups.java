@@ -592,6 +592,10 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.morenetherblocks.more_crimson_blocks"))
                     .entries((displayContext, entries) -> {
                         entries.add(Blocks.CRIMSON_NYLIUM);
+                        entries.add(CrimsonBlocks.CRIMSON_NETHERRACK);
+                        entries.add(CrimsonBlocks.CRIMSON_NETHERRACK_CRACKED);
+                        entries.add(CrimsonBlocks.CRIMSON_NETHERRACK_NYLIUM);
+                        entries.add(CrimsonBlocks.CRIMSON_NETHERRACK_NYLIUM_CRACKED);
                         entries.add(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICKS);
                         entries.add(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_SLAB);
                         entries.add(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_STAIRS);
@@ -848,14 +852,6 @@ public class ModItemGroups {
                         entries.add(GlowstoneBlocks.GLOWSTONE_POLISHED_STAIRS);
                         entries.add(GlowstoneBlocks.GLOWSTONE_POLISHED_SLAB);
                         entries.add(GlowstoneBlocks.GLOWSTONE_POLISHED_WALL);
-                        entries.add(GlowstoneBlocks.GLOWSTONE_SMOOTH);
-                        entries.add(GlowstoneBlocks.GLOWSTONE_SMOOTH_STAIRS);
-                        entries.add(GlowstoneBlocks.GLOWSTONE_SMOOTH_SLAB);
-                        entries.add(GlowstoneBlocks.GLOWSTONE_SMOOTH_WALL);
-                        entries.add(GlowstoneBlocks.GLOWSTONE_SMOOTH_CRACKED);
-                        entries.add(GlowstoneBlocks.GLOWSTONE_SMOOTH_CRACKED_STAIRS);
-                        entries.add(GlowstoneBlocks.GLOWSTONE_SMOOTH_CRACKED_SLAB);
-                        entries.add(GlowstoneBlocks.GLOWSTONE_SMOOTH_CRACKED_WALL);
                         entries.add(GlowstoneBlocks.GLOWSTONE_POLISHED_LARGE_BRICKS);
                         entries.add(GlowstoneBlocks.GLOWSTONE_POLISHED_LARGE_BRICK_STAIRS);
                         entries.add(GlowstoneBlocks.GLOWSTONE_POLISHED_LARGE_BRICK_SLAB);
@@ -1016,6 +1012,44 @@ public class ModItemGroups {
                         entries.add(GlowstoneBlocks.GLOWSTONE_POLISHED_CHISELED_PYRAMID_STAIRS);
                         entries.add(GlowstoneBlocks.GLOWSTONE_POLISHED_CHISELED_PYRAMID_SLAB);
                         entries.add(GlowstoneBlocks.GLOWSTONE_POLISHED_CHISELED_PYRAMID_WALL);
+                    })
+
+                    .build());
+    public static final ItemGroup MORE_MISCELLANEOUS_BLOCKS_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(MoreNetherBlocks.MOD_ID, "more_misc_blocks"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(MiscBlocks.BLUE_NETHER_BRICKS))
+                    .displayName(Text.translatable("itemgroup.morenetherblocks.more_misc_blocks"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(MiscBlocks.BLUE_NETHER_BRICKS);
+                        entries.add(MiscBlocks.BLUE_NETHER_BRICK_STAIRS);
+                        entries.add(MiscBlocks.BLUE_NETHER_BRICK_SLAB);
+                        entries.add(MiscBlocks.BLUE_NETHER_BRICK_WALL);
+                        entries.add(MiscBlocks.BLUE_NETHER_BRICK_FENCE);
+                        entries.add(MiscBlocks.BLUE_NETHER_BRICKS_CHISELED);
+                        entries.add(MiscBlocks.BLUE_NETHER_BRICKS_CRACKED);
+                        entries.add(MiscBlocks.BLUE_NETHER_BRICK_CRACKED_STAIRS);
+                        entries.add(MiscBlocks.BLUE_NETHER_BRICK_CRACKED_SLAB);
+                        entries.add(MiscBlocks.BLUE_NETHER_BRICK_CRACKED_WALL);
+                        entries.add(MiscBlocks.BLUE_NETHER_BRICK_CRACKED_FENCE);
+                        entries.add(MiscBlocks.NETHER_BRICK_CRACKED_STAIRS);
+                        entries.add(MiscBlocks.NETHER_BRICK_CRACKED_SLAB);
+                        entries.add(MiscBlocks.NETHER_BRICK_CRACKED_WALL);
+                        entries.add(MiscBlocks.NETHER_BRICK_CRACKED_FENCE);
+                        entries.add(MiscBlocks.RED_NETHER_BRICKS_CHISELED);
+                        entries.add(MiscBlocks.RED_NETHER_BRICKS_CRACKED);
+                        entries.add(MiscBlocks.RED_NETHER_BRICK_CRACKED_STAIRS);
+                        entries.add(MiscBlocks.RED_NETHER_BRICK_CRACKED_SLAB);
+                        entries.add(MiscBlocks.RED_NETHER_BRICK_CRACKED_WALL);
+                        entries.add(MiscBlocks.RED_NETHER_BRICK_CRACKED_FENCE);
+                        entries.add(MiscBlocks.CHARCOAL_SAPLING);
+                        entries.add(MiscBlocks.CHARCOAL_LOG);
+                        entries.add(MiscBlocks.CHARCOAL_WOOD);
+                        entries.add(MiscBlocks.CHARCOAL_LOG_STRIPPED);
+                        entries.add(MiscBlocks.CHARCOAL_WOOD_STRIPPED);
+                        entries.add(MiscBlocks.CHARCOAL_PLANKS);
+                        entries.add(MiscBlocks.CHARCOAL_STAIRS);
+                        entries.add(MiscBlocks.CHARCOAL_SLAB);
+                        entries.add(MiscBlocks.CHARCOAL_FENCE);
                     })
 
                     .build());

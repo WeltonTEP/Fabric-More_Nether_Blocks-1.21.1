@@ -1,5 +1,6 @@
 package net.weltontep.morenetherblocks.world;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
@@ -9,15 +10,15 @@ import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.FeatureConfig;
-import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
+import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
+import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.trunk.LargeOakTrunkPlacer;
+import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.weltontep.morenetherblocks.MoreNetherBlocks;
-import net.weltontep.morenetherblocks.block.BasaltBlocks;
-import net.weltontep.morenetherblocks.block.BlackstoneBlocks;
-import net.weltontep.morenetherblocks.block.BloodstoneBlocks;
-import net.weltontep.morenetherblocks.block.CrimsonBlocks;
+import net.weltontep.morenetherblocks.block.*;
 
 import java.util.List;
 
@@ -50,6 +51,8 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSON_NETHER_BRICK_CRACKED_ORE_KEY = registerKey("crimson_nether_brick_cracked_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSON_RED_NETHER_BRICK_ORE_KEY = registerKey("crimson_red_nether_brick_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSON_RED_NETHER_BRICK_CRACKED_ORE_KEY = registerKey("crimson_red_nether_brick_cracked_ore");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> CHARCOAL_KEY =registerKey("charcoal_key");
 
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
@@ -149,6 +152,13 @@ public class ModConfiguredFeatures {
         register(context, RED_NETHER_BRICK_ORE_KEY, Feature.ORE, new OreFeatureConfig(redNetherBrickOres, 32, 0f));
         register(context, CRIMSON_RED_NETHER_BRICK_ORE_KEY, Feature.ORE, new OreFeatureConfig(crimsonRedNetherBrickOres, 32, 0f));
         register(context, CRIMSON_RED_NETHER_BRICK_CRACKED_ORE_KEY, Feature.ORE, new OreFeatureConfig(crimsonRedNetherBrickCrackedOres, 32, 0f));
+
+        register(context, CHARCOAL_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(MiscBlocks.CHARCOAL_LOG),
+                new LargeOakTrunkPlacer(5, 6,3),
+                BlockStateProvider.of(Blocks.AIR),
+                new BlobFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(1), 3),
+                new TwoLayersFeatureSize(1,0,2)).build());
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

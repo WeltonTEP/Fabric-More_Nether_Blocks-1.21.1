@@ -1,5 +1,10 @@
-// 1.21.1	2025-03-13T21:33:53.0317059	MoreNetherBlocks/Tags for minecraft:block
-ff324247dada16eb32c8305dfb5d59512bad0bbe data\minecraft\tags\block\mineable\pickaxe.json
+// 1.21.1	2025-03-17T18:17:21.0756637	MoreNetherBlocks/Tags for minecraft:block
+894fb28322214da87655774e36bd7b645fc54ba5 data\minecraft\tags\block\fences.json
+d7e7c394e78a4bc30c096148c38414495be504d4 data\minecraft\tags\block\mineable\pickaxe.json
 60ef653b4c2e5f6f50354e2d85be30549a7a6898 data\minecraft\tags\block\impermeable.json
-305331da85b283a50c432dd27dc6eee0d75f031e data\minecraft\tags\block\nylium.json
-d2bfa5d1b280df31fabae6968b8b8aa07943cd0c data\minecraft\tags\block\walls.json
+f145117cff66101a6483cb6a81232e9b3009f969 data\minecraft\tags\block\planks.json
+b9f5e731a326f1ae62ec9615a9906bb40321fc64 data\minecraft\tags\block\logs_that_burn.json
+a9691733b40109686852e4c30151c3660d4b54e9 data\minecraft\tags\block\nylium.json
+6c91989be23e8920ec99201f1167383102d68dd9 data\minecraft\tags\block\dirt.json
+94c26bb91afd447026f4cf6e63e6c199e715b2a2 data\minecraft\tags\block\walls.json
+0d6fe94d148c86a2d1b7d971412a870862fbb4ac data\minecraft\tags\block\mineable\axe.json
