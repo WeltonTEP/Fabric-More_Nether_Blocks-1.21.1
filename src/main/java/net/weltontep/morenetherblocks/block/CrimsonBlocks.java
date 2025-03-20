@@ -179,8 +179,32 @@ public class CrimsonBlocks {
             new NetherrackBlock(AbstractBlock.Settings.create().strength(0.4F)
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NYLIUM)));
 
+    public static final Block CRIMSON_NETHERRACK_STAIRS = registerBlock("crimson/crimson_netherrack_stairs",
+            new StairsBlock(CrimsonBlocks.CRIMSON_NETHERRACK.getDefaultState(), AbstractBlock.Settings.create().strength(0.4F)
+                    .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NYLIUM)));
+
+    public static final Block CRIMSON_NETHERRACK_SLAB = registerBlock("crimson/crimson_netherrack_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(0.4F)
+                    .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NYLIUM)));
+
+    public static final Block CRIMSON_NETHERRACK_WALL = registerBlock("crimson/crimson_netherrack_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(0.4F)
+                    .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NYLIUM)));
+
     public static final Block CRIMSON_NETHERRACK_CRACKED = registerBlock("crimson/crimson_netherrack_cracked",
             new NetherrackBlock(AbstractBlock.Settings.create().strength(0.4F)
+                    .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NYLIUM)));
+
+    public static final Block CRIMSON_NETHERRACK_CRACKED_STAIRS = registerBlock("crimson/crimson_netherrack_cracked_stairs",
+            new StairsBlock(CrimsonBlocks.CRIMSON_NETHERRACK.getDefaultState(), AbstractBlock.Settings.create().strength(0.4F)
+                    .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NYLIUM)));
+
+    public static final Block CRIMSON_NETHERRACK_CRACKED_SLAB = registerBlock("crimson/crimson_netherrack_cracked_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(0.4F)
+                    .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NYLIUM)));
+
+    public static final Block CRIMSON_NETHERRACK_CRACKED_WALL = registerBlock("crimson/crimson_netherrack_cracked_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(0.4F)
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NYLIUM)));
 
     public static final Block CRIMSON_NETHERRACK_NYLIUM = registerBlock("crimson/crimson_netherrack_nylium",
@@ -190,6 +214,13 @@ public class CrimsonBlocks {
     public static final Block CRIMSON_NETHERRACK_NYLIUM_CRACKED = registerBlock("crimson/crimson_netherrack_nylium_cracked",
             new NyliumBlock(AbstractBlock.Settings.create().strength(0.4F)
                     .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NYLIUM)));
+
+    public static final Block CRIMSON_MYCELIAL_THREADS = registerBlock("crimson/crimson_mycelial_threads",
+            new GlowLichenBlock(AbstractBlock.Settings.create().strength(0)
+                    .replaceable()
+                    .noCollision()
+                    .breakInstantly()
+                    .sounds(BlockSoundGroup.ROOTS)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

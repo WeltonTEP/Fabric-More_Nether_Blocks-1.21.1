@@ -1,16 +1,13 @@
 {
   "variants": {
     "axis=x": {
-      "model": "morenetherblocks:block/netherstone_polished_pillar_horizontal",
-      "x": 90,
-      "y": 90
+      "model": "morenetherblocks:block/netherstone/netherstone_polished_pillar_horizontal_x"
     },
     "axis=y": {
-      "model": "morenetherblocks:block/netherstone_polished_pillar"
+      "model": "morenetherblocks:block/netherstone/netherstone_polished_pillar"
     },
     "axis=z": {
-      "model": "morenetherblocks:block/netherstone_polished_pillar_horizontal",
-      "x": 90
+      "model": "morenetherblocks:block/netherstone/netherstone_polished_pillar_horizontal_z"
     }
   }
 }

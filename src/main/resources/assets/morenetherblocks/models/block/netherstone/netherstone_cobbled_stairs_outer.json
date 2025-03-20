@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/outer_stairs",
   "textures": {
-    "bottom": "morenetherblocks:block/netherstone_cobbled",
-    "top": "morenetherblocks:block/netherstone_cobbled",
-    "side": "morenetherblocks:block/netherstone_cobbled"
+    "bottom": "morenetherblocks:block/netherstone/netherstone_cobbled",
+    "side": "morenetherblocks:block/netherstone/netherstone_cobbled",
+    "top": "morenetherblocks:block/netherstone/netherstone_cobbled"
   }
 }

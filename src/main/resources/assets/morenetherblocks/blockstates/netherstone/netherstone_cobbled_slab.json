@@ -1,13 +1,13 @@
 {
   "variants": {
     "type=bottom": {
-      "model": "morenetherblocks:block/netherstone_cobbled_slab"
+      "model": "morenetherblocks:block/netherstone/netherstone_cobbled_slab"
     },
     "type=double": {
-      "model": "morenetherblocks:block/netherstone_cobbled"
+      "model": "morenetherblocks:block/netherstone/netherstone_cobbled"
     },
     "type=top": {
-      "model": "morenetherblocks:block/netherstone_cobbled_slab_top"
+      "model": "morenetherblocks:block/netherstone/netherstone_cobbled_slab_top"
     }
   }
 }

@@ -48,8 +48,14 @@ public class ModOreGeneration {
                 ModPlacedFeatures.BLACKSTONE_NETHERITE_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.BLOODSTONE_COBBLED_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.CRIMSON_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.CRIMSON_NETHERRACK_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.CRIMSON_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.CRIMSON_NETHERRACK_CRACKED_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.CRACKED_NETHER_BRICK_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.NETHERSTONE_COBBLED_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.CRIMSON_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.CRIMSON_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
@@ -64,5 +70,7 @@ public class ModOreGeneration {
                 ModPlacedFeatures.CRIMSON_RED_NETHER_BRICK_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.CRIMSON_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.CRIMSON_RED_NETHER_BRICK_CRACKED_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.CRIMSON_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.CRIMSONSTONE_COBBLED_ORE_PLACED_KEY);
     }
 }

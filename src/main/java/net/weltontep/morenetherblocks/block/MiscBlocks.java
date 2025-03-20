@@ -9,6 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.weltontep.morenetherblocks.MoreNetherBlocks;
+import net.weltontep.morenetherblocks.block.custom.ModSaplingBlock;
 import net.weltontep.morenetherblocks.world.tree.ModSaplingGenerators;
 
 public class MiscBlocks {
@@ -133,7 +134,27 @@ public class MiscBlocks {
                     .burnable().sounds(BlockSoundGroup.WOOD)));
 
     public static final Block CHARCOAL_SAPLING = registerBlock("misc/charcoal_sapling",
-            new SaplingBlock(ModSaplingGenerators.CHARCOAL, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+            new ModSaplingBlock(ModSaplingGenerators.CHARCOAL, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING), Blocks.SOUL_SOIL));
+
+    public static final Block FLINT_BLOCK = registerBlock("misc/flint_block",
+            new Block(AbstractBlock.Settings.create().strength(2f,6f)
+                    .requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+
+    public static final Block SULPHUR_DUST = registerBlock("misc/sulphur_dust",
+            new GlowLichenBlock(AbstractBlock.Settings.create().breakInstantly()
+                    .nonOpaque().sounds(BlockSoundGroup.WOOL)));
+
+    public static final Block NETHERRACK_STAIRS = registerBlock("misc/netherrack_stairs",
+            new StairsBlock(CrimsonBlocks.CRIMSON_NETHERRACK.getDefaultState(), AbstractBlock.Settings.create().strength(0.4F)
+                    .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHERRACK)));
+
+    public static final Block NETHERRACK_SLAB = registerBlock("misc/netherrack_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(0.4F)
+                    .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHERRACK)));
+
+    public static final Block NETHERRACK_WALL = registerBlock("misc/netherrack_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(0.4F)
+                    .requiresTool().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.NETHERRACK)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
