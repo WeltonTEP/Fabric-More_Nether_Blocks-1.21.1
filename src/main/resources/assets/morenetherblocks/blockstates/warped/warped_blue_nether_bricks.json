@@ -1,5 +1,9 @@
 {
   "variants": {
-    "": { "model": "morenetherblocks:block/warped_charcoal_planks" }
+    "": [
+      {
+        "model": "morenetherblocks:block/warped/warped_blue_nether_bricks"
+      }
+    ]
   }
 }

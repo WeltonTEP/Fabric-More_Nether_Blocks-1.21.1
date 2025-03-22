@@ -71,6 +71,8 @@ public class ModOreGeneration {
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.CRIMSON_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.RED_NETHER_BRICK_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.CRIMSON_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.RED_NETHER_BRICK_CRACKED_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.CRIMSON_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.CRIMSON_RED_NETHER_BRICK_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.CRIMSON_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.CRIMSON_RED_NETHER_BRICK_CRACKED_ORE_PLACED_KEY);
@@ -80,5 +82,33 @@ public class ModOreGeneration {
                 ModPlacedFeatures.CRIMSONSTONE_POLISHED_CUT_BRICK_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.CRIMSON_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.CRIMSONSTONE_POLISHED_CUT_BRICK_CRACKED_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.CRIMSON_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.WARPED_NETHERRACK_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WARPED_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.WARPED_NETHERRACK_CRACKED_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WARPED_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.WARPED_BLACKSTONE_POLISHED_LARGE_BRICK_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WARPED_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.WARPED_BLACKSTONE_POLISHED_LARGE_BRICK_CRACKED_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WARPED_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.WARPED_NETHER_BRICK_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WARPED_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.WARPED_NETHER_BRICK_CRACKED_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WARPED_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.BLUE_NETHER_BRICK_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WARPED_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.BLUE_NETHER_BRICK_CRACKED_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WARPED_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.WARPED_BLUE_NETHER_BRICK_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WARPED_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.WARPED_BLUE_NETHER_BRICK_CRACKED_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WARPED_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.WARPEDSTONE_COBBLED_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WARPED_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.WARPEDSTONE_POLISHED_CUT_BRICK_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WARPED_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.WARPEDSTONE_POLISHED_CUT_BRICK_CRACKED_ORE_PLACED_KEY);
+
     }
+
 }

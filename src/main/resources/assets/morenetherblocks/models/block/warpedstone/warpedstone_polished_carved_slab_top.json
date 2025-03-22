@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "morenetherblocks:block/warpedstone_polished_carved",
-    "top": "morenetherblocks:block/warpedstone_polished_carved",
-    "side": "morenetherblocks:block/warpedstone_polished_carved"
-  }
-}

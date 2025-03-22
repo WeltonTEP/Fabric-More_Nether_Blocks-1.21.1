@@ -53,16 +53,33 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_CRACKED_ORE_KEY = registerKey("crimson_blackstone_polished_large_brick_cracked_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSON_NETHER_BRICK_ORE_KEY = registerKey("crimson_nether_brick_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> RED_NETHER_BRICK_ORE_KEY = registerKey("red_nether_brick_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> RED_NETHER_BRICK_CRACKED_ORE_KEY = registerKey("red_nether_brick_cracked_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSON_NETHER_BRICK_CRACKED_ORE_KEY = registerKey("crimson_nether_brick_cracked_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSON_RED_NETHER_BRICK_ORE_KEY = registerKey("crimson_red_nether_brick_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSON_RED_NETHER_BRICK_CRACKED_ORE_KEY = registerKey("crimson_red_nether_brick_cracked_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSONSTONE_COBBLED_ORE_KEY = registerKey("crimsonstone_cobbled_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSONSTONE_POLISHED_CUT_BRICK_ORE_KEY = registerKey("crimsonstone_polished_cut_brick_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSONSTONE_POLISHED_CUT_BRICK_CRACKED_ORE_KEY = registerKey("crimsonstone_polished_cut_brick_cracked_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> WARPED_NETHERRACK_ORE_KEY = registerKey("warped_netherrack_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> WARPED_NETHERRACK_CRACKED_ORE_KEY = registerKey("warped_netherrack_cracked_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> WARPED_BLACKSTONE_POLISHED_LARGE_BRICK_ORE_KEY = registerKey("warped_blackstone_polished_large_brick_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> WARPED_BLACKSTONE_POLISHED_LARGE_BRICK_CRACKED_ORE_KEY = registerKey("warped_blackstone_polished_large_brick_cracked_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> WARPED_NETHER_BRICK_ORE_KEY = registerKey("warped_nether_brick_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> BLUE_NETHER_BRICK_ORE_KEY = registerKey("blue_nether_brick_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> BLUE_NETHER_BRICK_CRACKED_ORE_KEY = registerKey("blue_nether_brick_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> WARPED_NETHER_BRICK_CRACKED_ORE_KEY = registerKey("warped_nether_brick_cracked_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> WARPED_BLUE_NETHER_BRICK_ORE_KEY = registerKey("warped_blue_nether_brick_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> WARPED_BLUE_NETHER_BRICK_CRACKED_ORE_KEY = registerKey("warped_blue_nether_brick_cracked_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> WARPEDSTONE_COBBLED_ORE_KEY = registerKey("warpedstone_cobbled_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> WARPEDSTONE_POLISHED_CUT_BRICK_ORE_KEY = registerKey("warpedstone_polished_cut_brick_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> WARPEDSTONE_POLISHED_CUT_BRICK_CRACKED_ORE_KEY = registerKey("warpedstone_polished_cut_brick_cracked_ore");
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> CHARCOAL_KEY =registerKey("charcoal_key");
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> CHARCOAL_SAPLING_KEY =registerKey("charcoal_sapling_key");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> SOUL_SAND_LOOSE_KEY = registerKey("soul_sand_loose_key");
+
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         //CF -> PF -> BM
@@ -136,6 +153,8 @@ public class ModConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(netherBrickReplaceables, CrimsonBlocks.CRIMSON_NETHER_BRICKS_CRACKED.getDefaultState()));
         List<OreFeatureConfig.Target> redNetherBrickOres =
                 List.of(OreFeatureConfig.createTarget(netherBrickReplaceables, Blocks.RED_NETHER_BRICKS.getDefaultState()));
+        List<OreFeatureConfig.Target> redNetherBrickCrackedOres =
+                List.of(OreFeatureConfig.createTarget(netherBrickReplaceables, MiscBlocks.RED_NETHER_BRICKS_CRACKED.getDefaultState()));
         List<OreFeatureConfig.Target> crimsonRedNetherBrickOres =
                 List.of(OreFeatureConfig.createTarget(netherBrickReplaceables, CrimsonBlocks.CRIMSON_RED_NETHER_BRICKS.getDefaultState()));
         List<OreFeatureConfig.Target> crimsonRedNetherBrickCrackedOres =
@@ -146,6 +165,32 @@ public class ModConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(netherBrickReplaceables, CrimsonstoneBlocks.CRIMSONSTONE_POLISHED_CUT_BRICKS.getDefaultState()));
         List<OreFeatureConfig.Target> crimsonstoneCutBrickCrackedOres =
                 List.of(OreFeatureConfig.createTarget(netherBrickReplaceables, CrimsonstoneBlocks.CRIMSONSTONE_POLISHED_CUT_BRICKS_CRACKED.getDefaultState()));
+        List<OreFeatureConfig.Target> warpedNetherrackOres =
+                List.of(OreFeatureConfig.createTarget(netherReplaceables, WarpedBlocks.WARPED_NETHERRACK.getDefaultState()));
+        List<OreFeatureConfig.Target> warpedNetherrackCrackedOres =
+                List.of(OreFeatureConfig.createTarget(netherReplaceables, WarpedBlocks.WARPED_NETHERRACK_CRACKED.getDefaultState()));
+        List<OreFeatureConfig.Target> warpedBlackstoneLargeBrickOres =
+                List.of(OreFeatureConfig.createTarget(blackstoneLargeBrickReplaceables, WarpedBlocks.WARPED_BLACKSTONE_POLISHED_LARGE_BRICKS.getDefaultState()));
+        List<OreFeatureConfig.Target> warpedBlackstoneLargeBrickCrackedOres =
+                List.of(OreFeatureConfig.createTarget(blackstoneLargeBrickCrackedReplaceables, WarpedBlocks.WARPED_BLACKSTONE_POLISHED_LARGE_BRICKS_CRACKED.getDefaultState()));
+        List<OreFeatureConfig.Target> warpedNetherBrickOres =
+                List.of(OreFeatureConfig.createTarget(netherBrickReplaceables, WarpedBlocks.WARPED_NETHER_BRICKS.getDefaultState()));
+        List<OreFeatureConfig.Target> warpedNetherBrickCrackedOres =
+                List.of(OreFeatureConfig.createTarget(netherBrickReplaceables, WarpedBlocks.WARPED_NETHER_BRICKS_CRACKED.getDefaultState()));
+        List<OreFeatureConfig.Target> blueNetherBrickOres =
+                List.of(OreFeatureConfig.createTarget(netherBrickReplaceables, MiscBlocks.BLUE_NETHER_BRICKS.getDefaultState()));
+        List<OreFeatureConfig.Target> blueNetherBrickCrackedOres =
+                List.of(OreFeatureConfig.createTarget(netherBrickReplaceables, MiscBlocks.BLUE_NETHER_BRICKS_CRACKED.getDefaultState()));
+        List<OreFeatureConfig.Target> warpedBlueNetherBrickOres =
+                List.of(OreFeatureConfig.createTarget(netherBrickReplaceables, WarpedBlocks.WARPED_BLUE_NETHER_BRICKS.getDefaultState()));
+        List<OreFeatureConfig.Target> warpedBlueNetherBrickCrackedOres =
+                List.of(OreFeatureConfig.createTarget(netherBrickReplaceables, WarpedBlocks.WARPED_BLUE_NETHER_BRICKS_CRACKED.getDefaultState()));
+        List<OreFeatureConfig.Target> warpedstoneCobbledOres =
+                List.of(OreFeatureConfig.createTarget(netherBrickReplaceables, WarpedstoneBlocks.WARPEDSTONE_COBBLED.getDefaultState()));
+        List<OreFeatureConfig.Target> warpedstoneCutBrickOres =
+                List.of(OreFeatureConfig.createTarget(netherBrickReplaceables, WarpedstoneBlocks.WARPEDSTONE_POLISHED_CUT_BRICKS.getDefaultState()));
+        List<OreFeatureConfig.Target> warpedstoneCutBrickCrackedOres =
+                List.of(OreFeatureConfig.createTarget(netherBrickReplaceables, WarpedstoneBlocks.WARPEDSTONE_POLISHED_CUT_BRICKS_CRACKED.getDefaultState()));
 
         register(context, SMOOTH_BASALT_DELTA_ORE_KEY, Feature.ORE, new OreFeatureConfig(smoothBasaltDeltaOres, 6));
         register(context, DOWN_DEEPSLATE_ORE_KEY, Feature.ORE, new OreFeatureConfig(downDeepslateOres, 32, 1f));
@@ -178,11 +223,25 @@ public class ModConfiguredFeatures {
         register(context, CRIMSON_NETHER_BRICK_ORE_KEY, Feature.ORE, new OreFeatureConfig(crimsonNetherBrickOres, 32, 0f));
         register(context, CRIMSON_NETHER_BRICK_CRACKED_ORE_KEY, Feature.ORE, new OreFeatureConfig(crimsonNetherBrickCrackedOres, 32, 0f));
         register(context, RED_NETHER_BRICK_ORE_KEY, Feature.ORE, new OreFeatureConfig(redNetherBrickOres, 32, 0f));
+        register(context, RED_NETHER_BRICK_CRACKED_ORE_KEY, Feature.ORE, new OreFeatureConfig(redNetherBrickCrackedOres, 32, 0f));
         register(context, CRIMSON_RED_NETHER_BRICK_ORE_KEY, Feature.ORE, new OreFeatureConfig(crimsonRedNetherBrickOres, 32, 0f));
         register(context, CRIMSON_RED_NETHER_BRICK_CRACKED_ORE_KEY, Feature.ORE, new OreFeatureConfig(crimsonRedNetherBrickCrackedOres, 32, 0f));
         register(context, CRIMSONSTONE_COBBLED_ORE_KEY, Feature.ORE, new OreFeatureConfig(crimsonstoneCobbledOres, 32, 0f));
         register(context, CRIMSONSTONE_POLISHED_CUT_BRICK_ORE_KEY, Feature.ORE, new OreFeatureConfig(crimsonstoneCutBrickOres, 32, 0f));
         register(context, CRIMSONSTONE_POLISHED_CUT_BRICK_CRACKED_ORE_KEY, Feature.ORE, new OreFeatureConfig(crimsonstoneCutBrickCrackedOres, 32, 0f));
+        register(context, WARPED_NETHERRACK_ORE_KEY, Feature.ORE, new OreFeatureConfig(warpedNetherrackOres, 8, 0f));
+        register(context, WARPED_NETHERRACK_CRACKED_ORE_KEY, Feature.ORE, new OreFeatureConfig(warpedNetherrackCrackedOres, 8, 0f));
+        register(context, WARPED_BLACKSTONE_POLISHED_LARGE_BRICK_ORE_KEY, Feature.ORE, new OreFeatureConfig(warpedBlackstoneLargeBrickOres, 32, 0f));
+        register(context, WARPED_BLACKSTONE_POLISHED_LARGE_BRICK_CRACKED_ORE_KEY, Feature.ORE, new OreFeatureConfig(warpedBlackstoneLargeBrickCrackedOres, 32, 0f));
+        register(context, WARPED_NETHER_BRICK_ORE_KEY, Feature.ORE, new OreFeatureConfig(warpedNetherBrickOres, 32, 0f));
+        register(context, WARPED_NETHER_BRICK_CRACKED_ORE_KEY, Feature.ORE, new OreFeatureConfig(warpedNetherBrickCrackedOres, 32, 0f));
+        register(context, BLUE_NETHER_BRICK_ORE_KEY, Feature.ORE, new OreFeatureConfig(blueNetherBrickOres, 32, 0f));
+        register(context, BLUE_NETHER_BRICK_CRACKED_ORE_KEY, Feature.ORE, new OreFeatureConfig(blueNetherBrickCrackedOres, 32, 0f));
+        register(context, WARPED_BLUE_NETHER_BRICK_ORE_KEY, Feature.ORE, new OreFeatureConfig(warpedBlueNetherBrickOres, 32, 0f));
+        register(context, WARPED_BLUE_NETHER_BRICK_CRACKED_ORE_KEY, Feature.ORE, new OreFeatureConfig(warpedBlueNetherBrickCrackedOres, 32, 0f));
+        register(context, WARPEDSTONE_COBBLED_ORE_KEY, Feature.ORE, new OreFeatureConfig(warpedstoneCobbledOres, 32, 0f));
+        register(context, WARPEDSTONE_POLISHED_CUT_BRICK_ORE_KEY, Feature.ORE, new OreFeatureConfig(warpedstoneCutBrickOres, 32, 0f));
+        register(context, WARPEDSTONE_POLISHED_CUT_BRICK_CRACKED_ORE_KEY, Feature.ORE, new OreFeatureConfig(warpedstoneCutBrickCrackedOres, 32, 0f));
 
         register(context, CHARCOAL_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(MiscBlocks.CHARCOAL_LOG),

@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "morenetherblocks:block/warpedstone_polished" }
+    "": {
+      "model": "morenetherblocks:block/warpedstone/warpedstone_polished"
+    }
   }
 }

@@ -1,13 +1,13 @@
 {
   "variants": {
     "type=bottom": {
-      "model": "morenetherblocks:block/warpedstone_slab"
+      "model": "morenetherblocks:block/warpedstone/warpedstone_slab"
     },
     "type=double": {
-      "model": "morenetherblocks:block/warpedstone"
+      "model": "morenetherblocks:block/warpedstone/warpedstone"
     },
     "type=top": {
-      "model": "morenetherblocks:block/warpedstone_slab_top"
+      "model": "morenetherblocks:block/warpedstone/warpedstone_slab_top"
     }
   }
 }

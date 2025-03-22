@@ -1,5 +1,9 @@
 {
   "variants": {
-    "": { "model": "morenetherblocks:block/warped_blue_nylium_bricks" }
+    "": [
+      {
+        "model": "morenetherblocks:block/warped/warped_blue_nylium_bricks"
+      }
+    ]
   }
 }

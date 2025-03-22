@@ -12,12 +12,11 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.weltontep.morenetherblocks.MoreNetherBlocks;
-import net.weltontep.morenetherblocks.block.custom.SoulSandLooseBlock;
 
 public class SoulSandstoneBlocks {
 
     public static final Block SOUL_SAND_LOOSE = registerBlock("soulsandstone/soul_sand_loose",
-            new SoulSandLooseBlock(AbstractBlock.Settings.create().strength(0.5F)
+            new FallingBlock(AbstractBlock.Settings.create().strength(0.5F)
                     .suffocates(Blocks::always)
                     .sounds(BlockSoundGroup.SAND)) {
                 @Override

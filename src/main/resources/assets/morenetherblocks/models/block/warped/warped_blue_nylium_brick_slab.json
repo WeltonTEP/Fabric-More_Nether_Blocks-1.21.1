@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "morenetherblocks:block/warped_charcoal_planks",
-    "top": "minecraft:block/warped_nylium",
-    "side": "morenetherblocks:block/warped_blue_nylium_bricks"
-  }
-}

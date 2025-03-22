@@ -1,5 +1,9 @@
 {
   "variants": {
-    "": { "model": "morenetherblocks:block/warped_netherrack_cracked" }
+    "": [
+      {
+        "model": "morenetherblocks:block/warped/warped_netherrack_cracked"
+      }
+    ]
   }
 }

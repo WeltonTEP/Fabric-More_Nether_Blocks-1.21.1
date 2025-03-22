@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "top": "morenetherblocks:block/warpedstone_smooth",
-    "bottom": "morenetherblocks:block/warpedstone",
-    "side": "morenetherblocks:block/warpedstone_smooth_cut_slab"
-  }
-}

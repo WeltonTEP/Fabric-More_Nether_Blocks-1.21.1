@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "morenetherblocks:block/warpedstone_polished_bricks_cracked",
-    "top": "morenetherblocks:block/warpedstone_polished_bricks_cracked",
-    "side": "morenetherblocks:block/warpedstone_polished_bricks_cracked"
-  }
-}

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/template_wall_post",
   "textures": {
-    "wall": "morenetherblocks:block/warped_charcoal_planks"
+    "wall": "morenetherblocks:block/warped/warped_blue_nether_bricks"
   }
 }

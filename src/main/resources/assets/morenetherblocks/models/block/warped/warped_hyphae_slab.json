@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "morenetherblocks:block/warped_hyphae",
-    "top": "morenetherblocks:block/warped_hyphae",
-    "side": "morenetherblocks:block/warped_hyphae"
-  }
-}
