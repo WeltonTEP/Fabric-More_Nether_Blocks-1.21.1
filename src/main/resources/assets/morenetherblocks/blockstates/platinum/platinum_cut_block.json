@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "model": "morenetherblocks:block/platinum_cut_block" }
+    "": { "model": "morenetherblocks:block/platinum/platinum_cut_block" }
   }
 }

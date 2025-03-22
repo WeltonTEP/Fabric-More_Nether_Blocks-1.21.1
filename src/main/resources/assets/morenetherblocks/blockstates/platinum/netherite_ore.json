@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "model": "morenetherblocks:block/netherite_ore" }
+    "": { "model": "morenetherblocks:block/platinum/netherite_ore" }
   }
 }

@@ -2,7 +2,7 @@
   "ambientocclusion": false,
   "textures": {
     "particle": "morenetherblocks:block/crimson/crimson_mycelial_threads",
-    "sulphur_dust": "morenetherblocks:block/crimson/crimson_mycelial_threads"
+    "crimson_mycelial_threads": "morenetherblocks:block/crimson/crimson_mycelial_threads"
   },
   "elements": [
     {   "from": [ 0, 0, 0.1 ],

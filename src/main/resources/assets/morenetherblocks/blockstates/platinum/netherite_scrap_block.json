@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "model": "morenetherblocks:block/netherite_scrap_block" }
+    "": { "model": "morenetherblocks:block/platinum/netherite_scrap_block" }
   }
 }

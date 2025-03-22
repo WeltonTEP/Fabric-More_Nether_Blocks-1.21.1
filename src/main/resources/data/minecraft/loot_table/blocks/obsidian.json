@@ -37,7 +37,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "morenetherblocks:obsidian_shard"
+              "name": "morenetherblocks:obsidian/obsidian_shard"
             }
           ]
         }

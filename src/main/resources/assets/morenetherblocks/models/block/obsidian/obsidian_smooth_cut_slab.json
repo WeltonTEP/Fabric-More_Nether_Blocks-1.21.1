@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "morenetherblocks:block/obsidian_smooth_bottom",
-    "top": "morenetherblocks:block/obsidian_smooth_cut",
-    "side": "morenetherblocks:block/obsidian_smooth_cut"
-  }
-}

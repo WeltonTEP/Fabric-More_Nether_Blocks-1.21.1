@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -202,9 +203,7 @@ public class ModItemGroups {
                         entries.add(BasaltBlocks.BASALT_SMOOTH_POLISHED_CHISELED_PYRAMID_STAIRS);
                         entries.add(BasaltBlocks.BASALT_SMOOTH_POLISHED_CHISELED_PYRAMID_SLAB);
                         entries.add(BasaltBlocks.BASALT_SMOOTH_POLISHED_CHISELED_PYRAMID_WALL);
-                    })
-
-                    .build());
+                    }).build());
 
     public static final ItemGroup MORE_BLACKSTONE_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(MoreNetherBlocks.MOD_ID, "more_blackstone_blocks"),
@@ -394,9 +393,7 @@ public class ModItemGroups {
                         entries.add(BlackstoneBlocks.BLACKSTONE_POLISHED_CHISELED_PYRAMID_STAIRS);
                         entries.add(BlackstoneBlocks.BLACKSTONE_POLISHED_CHISELED_PYRAMID_SLAB);
                         entries.add(BlackstoneBlocks.BLACKSTONE_POLISHED_CHISELED_PYRAMID_WALL);
-                    })
-
-                    .build());
+                    }).build());
     public static final ItemGroup MORE_BLOODSTONE_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(MoreNetherBlocks.MOD_ID, "more_bloodstone_blocks"),
             FabricItemGroup.builder().icon(() -> new ItemStack(BloodstoneBlocks.BLOODSTONE_COBBLED))
@@ -582,9 +579,7 @@ public class ModItemGroups {
                         entries.add(BloodstoneBlocks.BLOODSTONE_POLISHED_CHISELED_PYRAMID_STAIRS);
                         entries.add(BloodstoneBlocks.BLOODSTONE_POLISHED_CHISELED_PYRAMID_SLAB);
                         entries.add(BloodstoneBlocks.BLOODSTONE_POLISHED_CHISELED_PYRAMID_WALL);
-                    })
-
-                    .build());
+                    }).build());
 
     public static final ItemGroup MORE_CRIMSON_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(MoreNetherBlocks.MOD_ID, "more_crimson_blocks"),
@@ -643,9 +638,7 @@ public class ModItemGroups {
                         entries.add(CrimsonBlocks.CRIMSON_RED_NYLIUM_BRICKS);
                         entries.add(CrimsonBlocks.CRIMSON_RED_NYLIUM_BRICKS_CRACKED);
                         entries.add(CrimsonBlocks.CRIMSON_MYCELIAL_THREADS);
-                    })
-
-                    .build());
+                    }).build());
 
     public static final ItemGroup MORE_CRIMSONSTONE_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(MoreNetherBlocks.MOD_ID, "more_crimsonstone_blocks"),
@@ -832,9 +825,7 @@ public class ModItemGroups {
                         entries.add(CrimsonstoneBlocks.CRIMSONSTONE_POLISHED_CHISELED_PYRAMID_STAIRS);
                         entries.add(CrimsonstoneBlocks.CRIMSONSTONE_POLISHED_CHISELED_PYRAMID_SLAB);
                         entries.add(CrimsonstoneBlocks.CRIMSONSTONE_POLISHED_CHISELED_PYRAMID_WALL);
-                    })
-
-                    .build());
+                    }).build());
     public static final ItemGroup MORE_GLOWSTONE_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(MoreNetherBlocks.MOD_ID, "more_glowstone_blocks"),
             FabricItemGroup.builder().icon(() -> new ItemStack(Blocks.GLOWSTONE))
@@ -1019,9 +1010,7 @@ public class ModItemGroups {
                         entries.add(GlowstoneBlocks.GLOWSTONE_POLISHED_CHISELED_PYRAMID_STAIRS);
                         entries.add(GlowstoneBlocks.GLOWSTONE_POLISHED_CHISELED_PYRAMID_SLAB);
                         entries.add(GlowstoneBlocks.GLOWSTONE_POLISHED_CHISELED_PYRAMID_WALL);
-                    })
-
-                    .build());
+                    }).build());
     public static final ItemGroup MORE_MISCELLANEOUS_BLOCKS_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(MoreNetherBlocks.MOD_ID, "more_misc_blocks"),
             FabricItemGroup.builder().icon(() -> new ItemStack(MiscBlocks.BLUE_NETHER_BRICKS))
@@ -1062,9 +1051,10 @@ public class ModItemGroups {
                         entries.add(MiscBlocks.CHARCOAL_FENCE);
                         entries.add(MiscBlocks.FLINT_BLOCK);
                         entries.add(MiscBlocks.SULPHUR_DUST);
-                    })
-
-                    .build());
+                        entries.add(MiscBlocks.NETHERRACK_STAIRS);
+                        entries.add(MiscBlocks.NETHERRACK_SLAB);
+                        entries.add(MiscBlocks.NETHERRACK_WALL);
+                    }).build());
 
     public static final ItemGroup MORE_NETHERSTONE_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(MoreNetherBlocks.MOD_ID, "more_netherstone_blocks"),
@@ -1243,9 +1233,222 @@ public class ModItemGroups {
                         entries.add(NetherstoneBlocks.NETHERSTONE_POLISHED_CHISELED_PYRAMID_STAIRS);
                         entries.add(NetherstoneBlocks.NETHERSTONE_POLISHED_CHISELED_PYRAMID_SLAB);
                         entries.add(NetherstoneBlocks.NETHERSTONE_POLISHED_CHISELED_PYRAMID_WALL);
-                    })
+                    }).build());
 
-                    .build());
+    public static final ItemGroup MORE_OBSIDIAN_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(MoreNetherBlocks.MOD_ID, "more_obsidian_blocks"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(Blocks.OBSIDIAN))
+                    .displayName(Text.translatable("itemgroup.morenetherblocks.more_obsidian_blocks"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.OBSIDIAN_SHARD);
+                        entries.add(Blocks.OBSIDIAN);
+                        entries.add(ObsidianBlocks.OBSIDIAN_SAND);
+                        entries.add(ObsidianBlocks.OBSIDIAN_GLASS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_SMOOTH);
+                        entries.add(ObsidianBlocks.OBSIDIAN_SMOOTH_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_SMOOTH_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_SMOOTH_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_SMOOTH_CRACKED);
+                        entries.add(ObsidianBlocks.OBSIDIAN_SMOOTH_CRACKED_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_SMOOTH_CRACKED_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_SMOOTH_CRACKED_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_LARGE_BRICKS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_LARGE_BRICK_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_LARGE_BRICK_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_LARGE_BRICK_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_LARGE_BRICKS_CRACKED);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_LARGE_BRICK_CRACKED_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_LARGE_BRICK_CRACKED_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_LARGE_BRICK_CRACKED_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_SQUARE_BRICKS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_SQUARE_BRICK_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_SQUARE_BRICK_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_SQUARE_BRICK_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_SQUARE_BRICKS_CRACKED);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_SQUARE_BRICK_CRACKED_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_SQUARE_BRICK_CRACKED_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_SQUARE_BRICK_CRACKED_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_TILES);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_TILE_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_TILE_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_TILE_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_TILES_CRACKED);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_TILE_CRACKED_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_TILE_CRACKED_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_TILE_CRACKED_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_SHINGLES);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_SHINGLE_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_SHINGLE_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_SHINGLE_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CARVED_CIRCULAR);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CARVED_CIRCULAR_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CARVED_CIRCULAR_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CARVED_CIRCULAR_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CARVED_CIRCULAR_PILLAR);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CARVED_CIRCULAR_PILLAR_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CARVED_CIRCULAR_PILLAR_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CARVED_CIRCULAR_PILLAR_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CARVED_DENT);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CARVED_DENT_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CARVED_DENT_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CARVED_DENT_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CARVED_DENT_PILLAR);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CARVED_DENT_PILLAR_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CARVED_DENT_PILLAR_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CARVED_DENT_PILLAR_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CARVED_MOSAIC);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CARVED_MOSAIC_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CARVED_MOSAIC_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CARVED_MOSAIC_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CARVED_MOSAIC_PILLAR);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CARVED_MOSAIC_PILLAR_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CARVED_MOSAIC_PILLAR_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CARVED_MOSAIC_PILLAR_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_CRACKED);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_CRACKED_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_CRACKED_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_CRACKED_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_SANDSTONE);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_SANDSTONE_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_SANDSTONE_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_SANDSTONE_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICKS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICK_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICK_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICK_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICKS_CRACKED);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICK_CRACKED_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICK_CRACKED_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICK_CRACKED_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICKS_BRAIDED);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICK_BRAIDED_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICK_BRAIDED_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICK_BRAIDED_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICKS_BRAIDED2);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICK_BRAIDED2_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICK_BRAIDED2_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICK_BRAIDED2_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICKS_PINWHEEL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICK_PINWHEEL_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICK_PINWHEEL_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICK_PINWHEEL_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICKS_PINWHEEL2);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICK_PINWHEEL2_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICK_PINWHEEL2_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICK_PINWHEEL2_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICKS_ROAD);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICK_ROAD_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICK_ROAD_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICK_ROAD_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICKS_ROAD2);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICK_ROAD2_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICK_ROAD2_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_BRICK_ROAD2_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_PLANKS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_PLANK_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_PLANK_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_PLANK_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_PLANKS_CRACKED);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_PLANK_CRACKED_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_PLANK_CRACKED_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_PLANK_CRACKED_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_PLANK_PILLAR);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_PLANK_PILLAR_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_PLANK_PILLAR_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_PLANK_PILLAR_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_PLANK_PILLAR2);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_PLANK_PILLAR2_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_PLANK_PILLAR2_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_PLANK_PILLAR2_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_PILLAR);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_PILLAR_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_PILLAR_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_PILLAR_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_TILES);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_TILE_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_TILE_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_TILE_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_TILES_DIAMOND);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_TILE_DIAMOND_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_TILE_DIAMOND_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_TILE_DIAMOND_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_TILE_PILLAR);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_TILE_PILLAR_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_TILE_PILLAR_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CUT_TILE_PILLAR_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_PILLAR);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_PILLAR_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_PILLAR_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_PILLAR_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_PILLAR2);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_PILLAR2_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_PILLAR2_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_PILLAR2_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CHISELED_TWISTED);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CHISELED_TWISTED_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CHISELED_TWISTED_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CHISELED_TWISTED_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CHISELED_GREEK);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CHISELED_GREEK_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CHISELED_GREEK_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CHISELED_GREEK_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CHISELED_PILLAR);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CHISELED_PILLAR_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CHISELED_PILLAR_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CHISELED_PILLAR_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CHISELED_ORNATE);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CHISELED_ORNATE_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CHISELED_ORNATE_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CHISELED_ORNATE_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CHISELED_ORNATE2);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CHISELED_ORNATE2_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CHISELED_ORNATE2_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CHISELED_ORNATE2_WALL);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CHISELED_PYRAMID);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CHISELED_PYRAMID_STAIRS);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CHISELED_PYRAMID_SLAB);
+                        entries.add(ObsidianBlocks.OBSIDIAN_POLISHED_CHISELED_PYRAMID_WALL);
+                    }).build());
+
+    public static final ItemGroup MORE_PLATINUM_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(MoreNetherBlocks.MOD_ID, "more_platinum_blocks"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(PlatinumBlocks.PLATINUM_BLOCK))
+                    .displayName(Text.translatable("itemgroup.morenetherblocks.more_platinum_blocks"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(Blocks.ANCIENT_DEBRIS);
+                        entries.add(Items.NETHERITE_SCRAP);
+                        entries.add(PlatinumBlocks.NETHERITE_ORE);
+                        entries.add(PlatinumBlocks.NETHERITE_SCRAP_BLOCK);
+                        entries.add(PlatinumBlocks.NETHERITE_SCRAP_STAIRS);
+                        entries.add(PlatinumBlocks.NETHERITE_SCRAP_SLAB);
+                        entries.add(PlatinumBlocks.NETHERITE_SCRAP_WALL);
+                        entries.add(ModItems.PLATINUM);
+                        entries.add(PlatinumBlocks.PLATINUM_BLOCK);
+                        entries.add(PlatinumBlocks.PLATINUM_CUT_BLOCK);
+                        entries.add(PlatinumBlocks.PLATINUM_CUT_STAIRS);
+                        entries.add(PlatinumBlocks.PLATINUM_CUT_SLAB);
+                        entries.add(PlatinumBlocks.PLATINUM_CUT_WALL);
+                        entries.add(PlatinumBlocks.PLATINUM_CHISELED_BLOCK);
+                        entries.add(PlatinumBlocks.PLATINUM_CHISELED_STAIRS);
+                        entries.add(PlatinumBlocks.PLATINUM_CHISELED_SLAB);
+                        entries.add(PlatinumBlocks.PLATINUM_CHISELED_WALL);
+                        entries.add(PlatinumBlocks.PLATINUM_CHISELED_PILLAR);
+                        entries.add(PlatinumBlocks.PLATINUM_CHISELED_PILLAR_STAIRS);
+                        entries.add(PlatinumBlocks.PLATINUM_CHISELED_PILLAR_SLAB);
+                        entries.add(PlatinumBlocks.PLATINUM_CHISELED_PILLAR_WALL);
+                    }).build());
+
 
     public static void registerItemGroups() {
         MoreNetherBlocks.LOGGER.info("Registering Item Groups for " + MoreNetherBlocks.MOD_ID);

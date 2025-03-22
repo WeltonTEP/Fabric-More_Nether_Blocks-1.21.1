@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "morenetherblocks:platinum_stairs"
+          "name": "morenetherblocks:platinum/platinum_stairs"
         }
       ]
     }

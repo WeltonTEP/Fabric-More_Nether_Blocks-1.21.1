@@ -11,9 +11,8 @@ import net.weltontep.morenetherblocks.MoreNetherBlocks;
 public class ModItems {
     public static final Item BLUE_NETHER_BRICK = registerItem("misc/blue_nether_brick", new Item(new Item.Settings()));
     public static final Item RED_NETHER_BRICK = registerItem("misc/red_nether_brick", new Item(new Item.Settings()));
-    public static final Item OBSIDIAN_SHARD = registerItem("misc/obsidian_shard", new Item(new Item.Settings()));
-    public static final Item RAW_PLATINUM = registerItem("misc/raw_platinum", new Item(new Item.Settings()));
-    public static final Item QUARTZ_CLUSTER = registerItem("misc/quartz_cluster", new Item(new Item.Settings()));
+    public static final Item OBSIDIAN_SHARD = registerItem("obsidian/obsidian_shard", new Item(new Item.Settings()));
+    public static final Item PLATINUM = registerItem("platinum/platinum", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(MoreNetherBlocks.MOD_ID, name), item);
@@ -27,8 +26,7 @@ public class ModItems {
             entries.add(BLUE_NETHER_BRICK);
             entries.add(RED_NETHER_BRICK);
             entries.add(OBSIDIAN_SHARD);
-            entries.add(RAW_PLATINUM);
-            entries.add(QUARTZ_CLUSTER);
+            entries.add(PLATINUM);
         });
 
     }

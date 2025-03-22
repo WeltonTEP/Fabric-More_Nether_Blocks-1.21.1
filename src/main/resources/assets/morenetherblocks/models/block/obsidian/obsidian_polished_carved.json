@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "morenetherblocks:block/obsidian_polished_carved"
-  }
-}

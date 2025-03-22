@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "morenetherblocks:block/obsidian_cobbled",
-    "top": "morenetherblocks:block/obsidian_cobbled",
-    "side": "morenetherblocks:block/obsidian_cobbled"
-  }
-}

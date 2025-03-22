@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/template_wall_side_tall",
   "textures": {
-    "wall": "morenetherblocks:block/obsidian_polished"
+    "wall": "morenetherblocks:block/obsidian/obsidian_polished"
   }
 }

@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "morenetherblocks:block/obsidian_polished_tiles" }
+    "": {
+      "model": "morenetherblocks:block/obsidian/obsidian_polished_tiles"
+    }
   }
 }

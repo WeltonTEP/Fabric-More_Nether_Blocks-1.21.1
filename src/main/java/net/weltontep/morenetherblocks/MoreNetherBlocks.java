@@ -31,10 +31,14 @@ public class MoreNetherBlocks implements ModInitializer {
 		GlowstoneBlocks.registerModBlocks();
 		MiscBlocks.registerModBlocks();
 		NetherstoneBlocks.registerModBlocks();
+		ObsidianBlocks.registerModBlocks();
+		PlatinumBlocks.registerModBlocks();
+		SoulSandstoneBlocks.registerModBlocks();
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		ModWorldGeneration.generateModWorldGen();
+
 		StrippableBlockRegistry.register(MiscBlocks.CHARCOAL_LOG, MiscBlocks.CHARCOAL_LOG_STRIPPED);
 		StrippableBlockRegistry.register(MiscBlocks.CHARCOAL_WOOD, MiscBlocks.CHARCOAL_WOOD_STRIPPED);
 		FlammableBlockRegistry.getDefaultInstance().add(MiscBlocks.CHARCOAL_LOG, 5, 5);

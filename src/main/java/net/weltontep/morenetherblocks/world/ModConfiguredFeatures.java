@@ -47,6 +47,8 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSON_NETHERRACK_CRACKED_ORE_KEY = registerKey("crimson_netherrack_cracked_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> CRACKED_NETHER_BRICK_ORE_KEY = registerKey("cracked_nether_brick_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> NETHERSTONE_COBBLED_ORE_KEY = registerKey("netherstone_cobbled_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> NETHERSTONE_POLISHED_CUT_BRICK_ORE_KEY = registerKey("netherstone_polished_cut_brick_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> NETHERSTONE_POLISHED_CUT_BRICK_CRACKED_ORE_KEY = registerKey("netherstone_polished_cut_brick_cracked_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_ORE_KEY = registerKey("crimson_blackstone_polished_large_brick_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_CRACKED_ORE_KEY = registerKey("crimson_blackstone_polished_large_brick_cracked_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSON_NETHER_BRICK_ORE_KEY = registerKey("crimson_nether_brick_ore");
@@ -55,6 +57,8 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSON_RED_NETHER_BRICK_ORE_KEY = registerKey("crimson_red_nether_brick_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSON_RED_NETHER_BRICK_CRACKED_ORE_KEY = registerKey("crimson_red_nether_brick_cracked_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSONSTONE_COBBLED_ORE_KEY = registerKey("crimsonstone_cobbled_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSONSTONE_POLISHED_CUT_BRICK_ORE_KEY = registerKey("crimsonstone_polished_cut_brick_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSONSTONE_POLISHED_CUT_BRICK_CRACKED_ORE_KEY = registerKey("crimsonstone_polished_cut_brick_cracked_ore");
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> CHARCOAL_KEY =registerKey("charcoal_key");
 
@@ -118,6 +122,10 @@ public class ModConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(netherBrickReplaceables, Blocks.CRACKED_NETHER_BRICKS.getDefaultState()));
         List<OreFeatureConfig.Target> netherStoneCobbledOres =
                 List.of(OreFeatureConfig.createTarget(netherBrickReplaceables, NetherstoneBlocks.NETHERSTONE_COBBLED.getDefaultState()));
+        List<OreFeatureConfig.Target> netherStonePolishedCutBrickOres =
+                List.of(OreFeatureConfig.createTarget(netherBrickReplaceables, NetherstoneBlocks.NETHERSTONE_POLISHED_CUT_BRICKS.getDefaultState()));
+        List<OreFeatureConfig.Target> netherStonePolishedCutBrickCrackedOres =
+                List.of(OreFeatureConfig.createTarget(netherBrickReplaceables, NetherstoneBlocks.NETHERSTONE_POLISHED_CUT_BRICKS_CRACKED.getDefaultState()));
         List<OreFeatureConfig.Target> crimsonBlackstoneLargeBrickOres =
                 List.of(OreFeatureConfig.createTarget(blackstoneLargeBrickReplaceables, CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICKS.getDefaultState()));
         List<OreFeatureConfig.Target> crimsonBlackstoneLargeBrickCrackedOres =
@@ -134,8 +142,10 @@ public class ModConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(netherBrickReplaceables, CrimsonBlocks.CRIMSON_RED_NETHER_BRICKS_CRACKED.getDefaultState()));
         List<OreFeatureConfig.Target> crimsonstoneCobbledOres =
                 List.of(OreFeatureConfig.createTarget(netherBrickReplaceables, CrimsonstoneBlocks.CRIMSONSTONE_COBBLED.getDefaultState()));
-
-
+        List<OreFeatureConfig.Target> crimsonstoneCutBrickOres =
+                List.of(OreFeatureConfig.createTarget(netherBrickReplaceables, CrimsonstoneBlocks.CRIMSONSTONE_POLISHED_CUT_BRICKS.getDefaultState()));
+        List<OreFeatureConfig.Target> crimsonstoneCutBrickCrackedOres =
+                List.of(OreFeatureConfig.createTarget(netherBrickReplaceables, CrimsonstoneBlocks.CRIMSONSTONE_POLISHED_CUT_BRICKS_CRACKED.getDefaultState()));
 
         register(context, SMOOTH_BASALT_DELTA_ORE_KEY, Feature.ORE, new OreFeatureConfig(smoothBasaltDeltaOres, 6));
         register(context, DOWN_DEEPSLATE_ORE_KEY, Feature.ORE, new OreFeatureConfig(downDeepslateOres, 32, 1f));
@@ -161,6 +171,8 @@ public class ModConfiguredFeatures {
         register(context, CRIMSON_NETHERRACK_CRACKED_ORE_KEY, Feature.ORE, new OreFeatureConfig(crimsonNetherrackCrackedOres, 8, 0f));
         register(context, CRACKED_NETHER_BRICK_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherBrickCrackedOres, 32, 0f));
         register(context, NETHERSTONE_COBBLED_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherStoneCobbledOres, 32, 0f));
+        register(context, NETHERSTONE_POLISHED_CUT_BRICK_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherStonePolishedCutBrickOres, 32, 0f));
+        register(context, NETHERSTONE_POLISHED_CUT_BRICK_CRACKED_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherStonePolishedCutBrickCrackedOres, 32, 0f));
         register(context, CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_ORE_KEY, Feature.ORE, new OreFeatureConfig(crimsonBlackstoneLargeBrickOres, 32, 0f));
         register(context, CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_CRACKED_ORE_KEY, Feature.ORE, new OreFeatureConfig(crimsonBlackstoneLargeBrickCrackedOres, 32, 0f));
         register(context, CRIMSON_NETHER_BRICK_ORE_KEY, Feature.ORE, new OreFeatureConfig(crimsonNetherBrickOres, 32, 0f));
@@ -169,6 +181,8 @@ public class ModConfiguredFeatures {
         register(context, CRIMSON_RED_NETHER_BRICK_ORE_KEY, Feature.ORE, new OreFeatureConfig(crimsonRedNetherBrickOres, 32, 0f));
         register(context, CRIMSON_RED_NETHER_BRICK_CRACKED_ORE_KEY, Feature.ORE, new OreFeatureConfig(crimsonRedNetherBrickCrackedOres, 32, 0f));
         register(context, CRIMSONSTONE_COBBLED_ORE_KEY, Feature.ORE, new OreFeatureConfig(crimsonstoneCobbledOres, 32, 0f));
+        register(context, CRIMSONSTONE_POLISHED_CUT_BRICK_ORE_KEY, Feature.ORE, new OreFeatureConfig(crimsonstoneCutBrickOres, 32, 0f));
+        register(context, CRIMSONSTONE_POLISHED_CUT_BRICK_CRACKED_ORE_KEY, Feature.ORE, new OreFeatureConfig(crimsonstoneCutBrickCrackedOres, 32, 0f));
 
         register(context, CHARCOAL_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(MiscBlocks.CHARCOAL_LOG),

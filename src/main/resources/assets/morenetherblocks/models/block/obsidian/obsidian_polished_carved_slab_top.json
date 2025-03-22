@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "minecraft:block/obsidian_polished_carved",
-    "top": "minecraft:block/obsidian_polished_carved",
-    "side": "minecraft:block/obsidian_polished_carved"
-  }
-}

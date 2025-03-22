@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "morenetherblocks:block/obsidian_sand"
+    "all": "morenetherblocks:block/obsidian/obsidian_sand"
   }
 }

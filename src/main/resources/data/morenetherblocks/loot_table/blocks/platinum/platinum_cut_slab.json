@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "morenetherblocks:cut_platinum_slab"
+          "name": "morenetherblocks:platinum/cut_platinum_slab"
         }
       ]
     }

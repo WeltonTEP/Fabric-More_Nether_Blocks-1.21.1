@@ -9,6 +9,6 @@ import net.weltontep.morenetherblocks.world.ModPlacedFeatures;
 public class ModVegetationGeneration {
     public static void generateVegetation() {
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SOUL_SAND_VALLEY),
-                GenerationStep.Feature.RAW_GENERATION, ModPlacedFeatures.CHARCOAL_SAPLING_PLACED_KEY);
+                GenerationStep.Feature.UNDERGROUND_DECORATION, ModPlacedFeatures.CHARCOAL_SAPLING_PLACED_KEY);
     }
 }

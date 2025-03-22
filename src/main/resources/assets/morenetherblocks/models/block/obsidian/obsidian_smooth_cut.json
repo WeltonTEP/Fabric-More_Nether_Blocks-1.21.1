@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "top": "morenetherblocks:block/obsidian_smooth",
-    "bottom": "morenetherblocks:block/obsidian_smooth_bottom",
-    "side": "morenetherblocks:block/obsidian_smooth_cut"
-  }
-}

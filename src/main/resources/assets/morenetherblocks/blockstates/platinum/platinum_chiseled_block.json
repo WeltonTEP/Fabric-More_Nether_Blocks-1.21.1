@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "model": "morenetherblocks:block/platinum_chiseled_block" }
+    "": { "model": "morenetherblocks:block/platinum/platinum_chiseled_block" }
   }
 }
