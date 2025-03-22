@@ -1,8 +1,6 @@
 package net.weltontep.morenetherblocks.world;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -74,11 +72,9 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> WARPEDSTONE_POLISHED_CUT_BRICK_ORE_KEY = registerKey("warpedstone_polished_cut_brick_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> WARPEDSTONE_POLISHED_CUT_BRICK_CRACKED_ORE_KEY = registerKey("warpedstone_polished_cut_brick_cracked_ore");
 
-    public static final RegistryKey<ConfiguredFeature<?, ?>> CHARCOAL_KEY =registerKey("charcoal_key");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> CHARCOAL_KEY = registerKey("charcoal_key");
 
-    public static final RegistryKey<ConfiguredFeature<?, ?>> CHARCOAL_SAPLING_KEY =registerKey("charcoal_sapling_key");
-
-    public static final RegistryKey<ConfiguredFeature<?, ?>> SOUL_SAND_LOOSE_KEY = registerKey("soul_sand_loose_key");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> CHARCOAL_SAPLING_KEY = registerKey("charcoal_sapling_key");
 
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
