@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "morenetherblocks:soul_sand_loose"
+          "name": "morenetherblocks:soulsandstone/soul_sand_loose"
         }
       ]
     }

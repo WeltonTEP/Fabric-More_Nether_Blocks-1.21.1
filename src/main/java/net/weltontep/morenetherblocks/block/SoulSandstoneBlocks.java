@@ -18,6 +18,7 @@ public class SoulSandstoneBlocks {
 
     public static final Block SOUL_SAND_LOOSE = registerBlock("soulsandstone/soul_sand_loose",
             new SoulSandLooseBlock(AbstractBlock.Settings.create().strength(0.5F)
+                    .suffocates(Blocks::always)
                     .sounds(BlockSoundGroup.SAND)) {
                 @Override
                 protected MapCodec<? extends FallingBlock> getCodec() {
