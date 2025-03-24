@@ -64,7 +64,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> WARPED_BLACKSTONE_POLISHED_LARGE_BRICK_CRACKED_ORE_KEY = registerKey("warped_blackstone_polished_large_brick_cracked_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> WARPED_NETHER_BRICK_ORE_KEY = registerKey("warped_nether_brick_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> BLUE_NETHER_BRICK_ORE_KEY = registerKey("blue_nether_brick_ore");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> BLUE_NETHER_BRICK_CRACKED_ORE_KEY = registerKey("blue_nether_brick_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> BLUE_NETHER_BRICK_CRACKED_ORE_KEY = registerKey("blue_nether_brick_cracked_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> WARPED_NETHER_BRICK_CRACKED_ORE_KEY = registerKey("warped_nether_brick_cracked_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> WARPED_BLUE_NETHER_BRICK_ORE_KEY = registerKey("warped_blue_nether_brick_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> WARPED_BLUE_NETHER_BRICK_CRACKED_ORE_KEY = registerKey("warped_blue_nether_brick_cracked_ore");

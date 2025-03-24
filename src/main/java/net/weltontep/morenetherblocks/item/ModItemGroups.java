@@ -598,8 +598,8 @@ public class ModItemGroups {
                         entries.add(CrimsonBlocks.CRIMSON_NETHERRACK_NYLIUM);
                         entries.add(CrimsonBlocks.CRIMSON_NETHERRACK_NYLIUM_CRACKED);
                         entries.add(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICKS);
-                        entries.add(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_SLAB);
                         entries.add(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_STAIRS);
+                        entries.add(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_SLAB);
                         entries.add(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_WALL);
                         entries.add(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICKS_CRACKED);
                         entries.add(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICK_CRACKED_STAIRS);
@@ -608,8 +608,8 @@ public class ModItemGroups {
                         entries.add(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_NYLIUM_BRICKS);
                         entries.add(CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_NYLIUM_BRICKS_CRACKED);
                         entries.add(CrimsonBlocks.CRIMSON_BLUE_NETHER_BRICKS);
-                        entries.add(CrimsonBlocks.CRIMSON_BLUE_NETHER_BRICK_SLAB);
                         entries.add(CrimsonBlocks.CRIMSON_BLUE_NETHER_BRICK_STAIRS);
+                        entries.add(CrimsonBlocks.CRIMSON_BLUE_NETHER_BRICK_SLAB);
                         entries.add(CrimsonBlocks.CRIMSON_BLUE_NETHER_BRICK_WALL);
                         entries.add(CrimsonBlocks.CRIMSON_BLUE_NETHER_BRICKS_CRACKED);
                         entries.add(CrimsonBlocks.CRIMSON_BLUE_NETHER_BRICK_CRACKED_STAIRS);
@@ -618,8 +618,8 @@ public class ModItemGroups {
                         entries.add(CrimsonBlocks.CRIMSON_BLUE_NYLIUM_BRICKS);
                         entries.add(CrimsonBlocks.CRIMSON_BLUE_NYLIUM_BRICKS_CRACKED);
                         entries.add(CrimsonBlocks.CRIMSON_NETHER_BRICKS);
-                        entries.add(CrimsonBlocks.CRIMSON_NETHER_BRICK_SLAB);
                         entries.add(CrimsonBlocks.CRIMSON_NETHER_BRICK_STAIRS);
+                        entries.add(CrimsonBlocks.CRIMSON_NETHER_BRICK_SLAB);
                         entries.add(CrimsonBlocks.CRIMSON_NETHER_BRICK_WALL);
                         entries.add(CrimsonBlocks.CRIMSON_NETHER_BRICKS_CRACKED);
                         entries.add(CrimsonBlocks.CRIMSON_NETHER_BRICK_CRACKED_STAIRS);
@@ -628,8 +628,8 @@ public class ModItemGroups {
                         entries.add(CrimsonBlocks.CRIMSON_NYLIUM_BRICKS);
                         entries.add(CrimsonBlocks.CRIMSON_NYLIUM_BRICKS_CRACKED);
                         entries.add(CrimsonBlocks.CRIMSON_RED_NETHER_BRICKS);
-                        entries.add(CrimsonBlocks.CRIMSON_RED_NETHER_BRICK_SLAB);
                         entries.add(CrimsonBlocks.CRIMSON_RED_NETHER_BRICK_STAIRS);
+                        entries.add(CrimsonBlocks.CRIMSON_RED_NETHER_BRICK_SLAB);
                         entries.add(CrimsonBlocks.CRIMSON_RED_NETHER_BRICK_WALL);
                         entries.add(CrimsonBlocks.CRIMSON_RED_NETHER_BRICKS_CRACKED);
                         entries.add(CrimsonBlocks.CRIMSON_RED_NETHER_BRICK_CRACKED_STAIRS);
@@ -1465,8 +1465,8 @@ public class ModItemGroups {
                         entries.add(WarpedBlocks.WARPED_NETHERRACK_NYLIUM);
                         entries.add(WarpedBlocks.WARPED_NETHERRACK_NYLIUM_CRACKED);
                         entries.add(WarpedBlocks.WARPED_BLACKSTONE_POLISHED_LARGE_BRICKS);
-                        entries.add(WarpedBlocks.WARPED_BLACKSTONE_POLISHED_LARGE_BRICK_SLAB);
                         entries.add(WarpedBlocks.WARPED_BLACKSTONE_POLISHED_LARGE_BRICK_STAIRS);
+                        entries.add(WarpedBlocks.WARPED_BLACKSTONE_POLISHED_LARGE_BRICK_SLAB);
                         entries.add(WarpedBlocks.WARPED_BLACKSTONE_POLISHED_LARGE_BRICK_WALL);
                         entries.add(WarpedBlocks.WARPED_BLACKSTONE_POLISHED_LARGE_BRICKS_CRACKED);
                         entries.add(WarpedBlocks.WARPED_BLACKSTONE_POLISHED_LARGE_BRICK_CRACKED_STAIRS);
@@ -1475,8 +1475,8 @@ public class ModItemGroups {
                         entries.add(WarpedBlocks.WARPED_BLACKSTONE_POLISHED_LARGE_NYLIUM_BRICKS);
                         entries.add(WarpedBlocks.WARPED_BLACKSTONE_POLISHED_LARGE_NYLIUM_BRICKS_CRACKED);
                         entries.add(WarpedBlocks.WARPED_BLUE_NETHER_BRICKS);
-                        entries.add(WarpedBlocks.WARPED_BLUE_NETHER_BRICK_SLAB);
                         entries.add(WarpedBlocks.WARPED_BLUE_NETHER_BRICK_STAIRS);
+                        entries.add(WarpedBlocks.WARPED_BLUE_NETHER_BRICK_SLAB);
                         entries.add(WarpedBlocks.WARPED_BLUE_NETHER_BRICK_WALL);
                         entries.add(WarpedBlocks.WARPED_BLUE_NETHER_BRICKS_CRACKED);
                         entries.add(WarpedBlocks.WARPED_BLUE_NETHER_BRICK_CRACKED_STAIRS);
@@ -1485,8 +1485,8 @@ public class ModItemGroups {
                         entries.add(WarpedBlocks.WARPED_BLUE_NYLIUM_BRICKS);
                         entries.add(WarpedBlocks.WARPED_BLUE_NYLIUM_BRICKS_CRACKED);
                         entries.add(WarpedBlocks.WARPED_NETHER_BRICKS);
-                        entries.add(WarpedBlocks.WARPED_NETHER_BRICK_SLAB);
                         entries.add(WarpedBlocks.WARPED_NETHER_BRICK_STAIRS);
+                        entries.add(WarpedBlocks.WARPED_NETHER_BRICK_SLAB);
                         entries.add(WarpedBlocks.WARPED_NETHER_BRICK_WALL);
                         entries.add(WarpedBlocks.WARPED_NETHER_BRICKS_CRACKED);
                         entries.add(WarpedBlocks.WARPED_NETHER_BRICK_CRACKED_STAIRS);
@@ -1495,8 +1495,8 @@ public class ModItemGroups {
                         entries.add(WarpedBlocks.WARPED_NYLIUM_BRICKS);
                         entries.add(WarpedBlocks.WARPED_NYLIUM_BRICKS_CRACKED);
                         entries.add(WarpedBlocks.WARPED_RED_NETHER_BRICKS);
-                        entries.add(WarpedBlocks.WARPED_RED_NETHER_BRICK_SLAB);
                         entries.add(WarpedBlocks.WARPED_RED_NETHER_BRICK_STAIRS);
+                        entries.add(WarpedBlocks.WARPED_RED_NETHER_BRICK_SLAB);
                         entries.add(WarpedBlocks.WARPED_RED_NETHER_BRICK_WALL);
                         entries.add(WarpedBlocks.WARPED_RED_NETHER_BRICKS_CRACKED);
                         entries.add(WarpedBlocks.WARPED_RED_NETHER_BRICK_CRACKED_STAIRS);

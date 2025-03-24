@@ -2,6 +2,7 @@ package net.weltontep.morenetherblocks.block;
 
 import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -11,6 +12,7 @@ import net.minecraft.util.Identifier;
 import net.weltontep.morenetherblocks.MoreNetherBlocks;
 import net.weltontep.morenetherblocks.block.custom.CrimsonBlackstoneBrickBlock;
 import net.weltontep.morenetherblocks.block.custom.BlackstoneNyliumBrickBlock;
+import net.weltontep.morenetherblocks.block.custom.TallHangingPlantBlock;
 
 public class CrimsonBlocks {
 
@@ -220,6 +222,14 @@ public class CrimsonBlocks {
                     .replaceable()
                     .noCollision()
                     .breakInstantly()
+                    .sounds(BlockSoundGroup.ROOTS)));
+
+    public static final Block CRIMSON_TENDRILS = registerBlock("crimson/crimson_tendrils",
+            new TallHangingPlantBlock(AbstractBlock.Settings.create().strength(0)
+                    .replaceable()
+                    .noCollision()
+                    .breakInstantly()
+                    .pistonBehavior(PistonBehavior.DESTROY)
                     .sounds(BlockSoundGroup.ROOTS)));
 
     private static Block registerBlock(String name, Block block) {

@@ -9,7 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.weltontep.morenetherblocks.MoreNetherBlocks;
-import net.weltontep.morenetherblocks.block.custom.ModSaplingBlock;
+import net.weltontep.morenetherblocks.block.custom.CharcoalSaplingBlock;
 import net.weltontep.morenetherblocks.world.tree.ModSaplingGenerators;
 
 public class MiscBlocks {
@@ -134,7 +134,7 @@ public class MiscBlocks {
                     .burnable().sounds(BlockSoundGroup.WOOD)));
 
     public static final Block CHARCOAL_SAPLING = registerBlock("misc/charcoal_sapling",
-            new ModSaplingBlock(ModSaplingGenerators.CHARCOAL, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING), Blocks.SOUL_SOIL));
+            new CharcoalSaplingBlock(ModSaplingGenerators.CHARCOAL, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING), Blocks.SOUL_SOIL));
 
     public static final Block FLINT_BLOCK = registerBlock("misc/flint_block",
             new Block(AbstractBlock.Settings.create().strength(2f,6f)
