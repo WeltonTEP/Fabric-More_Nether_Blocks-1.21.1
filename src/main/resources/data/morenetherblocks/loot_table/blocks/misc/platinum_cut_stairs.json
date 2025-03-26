@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:misc/platinum_cut_stairs"
+          "name": "morenetherblocks:misc/platinum_cut_stairs"
         }
       ],
       "rolls": 1.0

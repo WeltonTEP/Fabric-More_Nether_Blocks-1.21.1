@@ -1,125 +1,26 @@
 package net.weltontep.morenetherblocks.block.custom;
 
-import com.mojang.serialization.MapCodec;
 import net.minecraft.block.*;
-import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.enums.DoubleBlockHalf;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
-import net.minecraft.item.ItemStack;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.EnumProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.shape.VoxelShape;
+import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
-import net.minecraft.world.WorldEvents;
 import net.minecraft.world.WorldView;
-import org.jetbrains.annotations.Nullable;
 
-public class TallHangingPlantBlock extends PlantBlock {
-    public static final MapCodec<TallPlantBlock> CODEC = createCodec(TallPlantBlock::new);
+public class TallHangingPlantBlock extends Block {
     public static final EnumProperty<DoubleBlockHalf> HALF = Properties.DOUBLE_BLOCK_HALF;
+    private static final VoxelShape SHAPE = Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 16.0, 13.0);
 
-    @Override
-    public MapCodec<? extends TallPlantBlock> getCodec() {
-        return CODEC;
-    }
-
-    public TallHangingPlantBlock(AbstractBlock.Settings settings) {
+    public TallHangingPlantBlock(Settings settings) {
         super(settings);
         this.setDefaultState(this.stateManager.getDefaultState().with(HALF, DoubleBlockHalf.UPPER));
-    }
-
-    @Override
-    protected BlockState getStateForNeighborUpdate(
-            BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos
-    ) {
-        DoubleBlockHalf doubleBlockHalf = state.get(HALF);
-        if (direction.getAxis() != Direction.Axis.Y
-                || doubleBlockHalf == DoubleBlockHalf.UPPER != (direction == Direction.UP)
-                || neighborState.isOf(this) && neighborState.get(HALF) != doubleBlockHalf) {
-            return doubleBlockHalf == DoubleBlockHalf.UPPER && direction == Direction.DOWN && !state.canPlaceAt(world, pos)
-                    ? Blocks.AIR.getDefaultState()
-                    : super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
-        } else {
-            return Blocks.AIR.getDefaultState();
-        }
-    }
-
-    @Nullable
-    @Override
-    public BlockState getPlacementState(ItemPlacementContext ctx) {
-        BlockPos blockPos = ctx.getBlockPos();
-        World world = ctx.getWorld();
-        return blockPos.getY() < world.getBottomY() - 1 && world.getBlockState(blockPos.up()).canReplace(ctx) ? super.getPlacementState(ctx) : null;
-    }
-
-    @Override
-    public void onPlaced(World world, BlockPos pos, BlockState state, LivingEntity placer, ItemStack itemStack) {
-        BlockPos blockPos = pos.up();
-        world.setBlockState(blockPos, withWaterloggedState(world, blockPos, this.getDefaultState().with(HALF, DoubleBlockHalf.LOWER)), Block.NOTIFY_ALL);
-    }
-
-    @Override
-    protected boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
-        if (state.get(HALF) != DoubleBlockHalf.LOWER) {
-            return super.canPlaceAt(state, world, pos);
-        } else {
-            BlockState blockState = world.getBlockState(pos.down());
-            return blockState.isOf(this) && blockState.get(HALF) == DoubleBlockHalf.UPPER;
-        }
-    }
-
-    public static void placeAt(WorldAccess world, BlockState state, BlockPos pos, int flags) {
-        BlockPos blockPos = pos.up();
-        world.setBlockState(pos, withWaterloggedState(world, pos, state.with(HALF, DoubleBlockHalf.UPPER)), flags);
-        world.setBlockState(blockPos, withWaterloggedState(world, blockPos, state.with(HALF, DoubleBlockHalf.LOWER)), flags);
-    }
-
-    public static BlockState withWaterloggedState(WorldView world, BlockPos pos, BlockState state) {
-        return state.contains(Properties.WATERLOGGED) ? state.with(Properties.WATERLOGGED, world.isWater(pos)) : state;
-    }
-
-    @Override
-    public BlockState onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
-        if (!world.isClient) {
-            if (player.isCreative()) {
-                onBreakInCreative(world, pos, state, player);
-            } else {
-                dropStacks(state, world, pos, null, player, player.getMainHandStack());
-            }
-        }
-
-        return super.onBreak(world, pos, state, player);
-    }
-
-    @Override
-    public void afterBreak(World world, PlayerEntity player, BlockPos pos, BlockState state, @Nullable BlockEntity blockEntity, ItemStack tool) {
-        super.afterBreak(world, player, pos, Blocks.AIR.getDefaultState(), blockEntity, tool);
-    }
-
-    /**
-     * Destroys a top half of a tall double block (such as a plant or a door)
-     * without dropping an item when broken in creative.
-     *
-     * @see Block#onBreak(World, BlockPos, BlockState, PlayerEntity)
-     */
-    protected static void onBreakInCreative(World world, BlockPos pos, BlockState state, PlayerEntity player) {
-        DoubleBlockHalf doubleBlockHalf = state.get(HALF);
-        if (doubleBlockHalf == DoubleBlockHalf.LOWER) {
-            BlockPos blockPos = pos.down();
-            BlockState blockState = world.getBlockState(blockPos);
-            if (blockState.isOf(state.getBlock()) && blockState.get(HALF) == DoubleBlockHalf.UPPER) {
-                BlockState blockState2 = blockState.getFluidState().isOf(Fluids.WATER) ? Blocks.WATER.getDefaultState() : Blocks.AIR.getDefaultState();
-                world.setBlockState(blockPos, blockState2, Block.NOTIFY_ALL | Block.SKIP_DROPS);
-                world.syncWorldEvent(player, WorldEvents.BLOCK_BROKEN, blockPos, Block.getRawIdFromState(blockState));
-            }
-        }
     }
 
     @Override
@@ -128,9 +29,54 @@ public class TallHangingPlantBlock extends PlantBlock {
     }
 
     @Override
-    protected long getRenderingSeed(BlockState state, BlockPos pos) {
-        return MathHelper.hashCode(pos.getX(), pos.down(state.get(HALF) == DoubleBlockHalf.UPPER ? 0 : 1).getY(), pos.getZ());
+    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        return SHAPE;
     }
 
+    @Override
+    public BlockState getPlacementState(ItemPlacementContext ctx) {
+        BlockPos blockPos = ctx.getBlockPos();
+        World world = ctx.getWorld();
+        BlockPos abovePos = blockPos.up();
+        BlockState aboveState = world.getBlockState(abovePos);
+        BlockPos belowPos = blockPos.down();
 
+        if (aboveState.isSideSolidFullSquare(world, abovePos, Direction.DOWN) && world.getBlockState(belowPos).isAir()) {
+            world.setBlockState(belowPos, this.getDefaultState().with(HALF, DoubleBlockHalf.LOWER), 3);
+            return this.getDefaultState().with(HALF, DoubleBlockHalf.UPPER);
+        }
+        return null;
+    }
+
+    @Override
+    public void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
+        if (!state.isOf(newState.getBlock())) {
+            if (state.get(HALF) == DoubleBlockHalf.UPPER) {
+                world.removeBlock(pos.down(), false);
+            } else {
+                world.removeBlock(pos.up(), false);
+            }
+        }
+    }
+
+    @Override
+    public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
+        if (state.get(HALF) == DoubleBlockHalf.UPPER) {
+            BlockPos abovePos = pos.up();
+            return world.getBlockState(abovePos).isSideSolidFullSquare(world, abovePos, Direction.DOWN);
+        }
+        return world.getBlockState(pos.up()).isOf(this);
+    }
+
+    @Override
+    public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
+        DoubleBlockHalf half = state.get(HALF);
+
+        if (half == DoubleBlockHalf.UPPER && world.getBlockState(pos.down()).isOf(this)) {
+            return state;
+        } else if (half == DoubleBlockHalf.LOWER && world.getBlockState(pos.up()).isOf(this)) {
+            return state;
+        }
+        return Blocks.AIR.getDefaultState();
+    }
 }

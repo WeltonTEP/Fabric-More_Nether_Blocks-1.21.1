@@ -638,6 +638,7 @@ public class ModItemGroups {
                         entries.add(CrimsonBlocks.CRIMSON_RED_NYLIUM_BRICKS);
                         entries.add(CrimsonBlocks.CRIMSON_RED_NYLIUM_BRICKS_CRACKED);
                         entries.add(CrimsonBlocks.CRIMSON_MYCELIAL_THREADS);
+                        entries.add(CrimsonBlocks.CRIMSON_TENDRILS);
                     }).build());
 
     public static final ItemGroup MORE_CRIMSONSTONE_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -1505,6 +1506,7 @@ public class ModItemGroups {
                         entries.add(WarpedBlocks.WARPED_RED_NYLIUM_BRICKS);
                         entries.add(WarpedBlocks.WARPED_RED_NYLIUM_BRICKS_CRACKED);
                         entries.add(WarpedBlocks.WARPED_MYCELIAL_THREADS);
+                        entries.add(WarpedBlocks.WARPED_TENDRILS);
                     }).build());
 
     public static final ItemGroup MORE_WARPEDSTONE_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,

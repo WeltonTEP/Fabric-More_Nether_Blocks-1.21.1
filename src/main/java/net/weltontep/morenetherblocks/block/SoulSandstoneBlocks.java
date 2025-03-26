@@ -1,10 +1,8 @@
 package net.weltontep.morenetherblocks.block;
 
-import com.mojang.serialization.MapCodec;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.FallingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -19,12 +17,8 @@ public class SoulSandstoneBlocks {
     public static final Block SOUL_SAND_LOOSE = registerBlock("soulsandstone/soul_sand_loose",
             new SoulSandLooseBlock(AbstractBlock.Settings.create().strength(0.5F)
                     .noCollision()
-                    .suffocates(Blocks::always)
+                    .solidBlock(Blocks::never)
                     .sounds(BlockSoundGroup.SAND)) {
-                @Override
-                protected MapCodec<? extends FallingBlock> getCodec() {
-                    return null;
-                }
             });
 
     private static Block registerBlock(String name, Block block) {

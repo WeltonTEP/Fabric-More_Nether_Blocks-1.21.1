@@ -76,6 +76,12 @@ public class ModConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> CHARCOAL_SAPLING_KEY = registerKey("charcoal_sapling_key");
 
+    public static final RegistryKey<ConfiguredFeature<?, ?>> SOUL_SAND_LOOSE_DISK_KEY = registerKey("soul_sand_loose_disk");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSON_MYCELIAL_THREADS_MULTIFACE_GROWTH_KEY = registerKey("crimson_mycelial_threads_multiface_growth");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSON_HANGING_TENDRILS_KEY = registerKey("crimson_hanging_tendrils");
+
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         //CF -> PF -> BM
@@ -253,6 +259,7 @@ public class ModConfiguredFeatures {
                         List.of(Blocks.SOUL_SOIL)
                 )
         );
+
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

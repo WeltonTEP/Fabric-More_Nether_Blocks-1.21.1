@@ -14,5 +14,7 @@ public class MoreNetherBlocksClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(MiscBlocks.SULPHUR_DUST, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(CrimsonBlocks.CRIMSON_MYCELIAL_THREADS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(WarpedBlocks.WARPED_MYCELIAL_THREADS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(CrimsonBlocks.CRIMSON_TENDRILS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(WarpedBlocks.WARPED_TENDRILS, RenderLayer.getCutout());
     }
 }

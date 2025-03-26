@@ -10,6 +10,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.weltontep.morenetherblocks.MoreNetherBlocks;
 import net.weltontep.morenetherblocks.block.custom.BlackstoneNyliumBrickBlock;
+import net.weltontep.morenetherblocks.block.custom.TallHangingPlantBlock;
 
 public class WarpedBlocks {
 
@@ -216,6 +217,13 @@ public class WarpedBlocks {
 
     public static final Block WARPED_MYCELIAL_THREADS = registerBlock("warped/warped_mycelial_threads",
             new GlowLichenBlock(AbstractBlock.Settings.create().strength(0)
+                    .replaceable()
+                    .noCollision()
+                    .breakInstantly()
+                    .sounds(BlockSoundGroup.ROOTS)));
+
+    public static final Block WARPED_TENDRILS = registerBlock("warped/warped_tendrils",
+            new TallHangingPlantBlock(AbstractBlock.Settings.create().strength(0)
                     .replaceable()
                     .noCollision()
                     .breakInstantly()

@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:misc/platinum_chiseled_pillar"
+          "name": "morenetherblocks:misc/platinum_chiseled_pillar"
         }
       ],
       "rolls": 1.0
