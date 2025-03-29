@@ -1,19 +1,27 @@
 package net.weltontep.morenetherblocks.world;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.MultifaceGrowthBlock;
 import net.minecraft.registry.Registerable;
+import net.minecraft.registry.RegistryEntryLookup;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.registry.entry.RegistryEntryList;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
+import net.minecraft.world.gen.blockpredicate.BlockPredicate;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.stateprovider.PredicatedStateProvider;
 import net.minecraft.world.gen.trunk.LargeOakTrunkPlacer;
 import net.weltontep.morenetherblocks.MoreNetherBlocks;
 import net.weltontep.morenetherblocks.block.*;
@@ -80,7 +88,7 @@ public class ModConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSON_MYCELIAL_THREADS_MULTIFACE_GROWTH_KEY = registerKey("crimson_mycelial_threads_multiface_growth");
 
-    public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSON_HANGING_TENDRILS_KEY = registerKey("crimson_hanging_tendrils");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSON_TENDRILS_KEY = registerKey("crimson_tendrils");
 
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
@@ -256,9 +264,51 @@ public class ModConfiguredFeatures {
                 ConfiguredFeatures.createRandomPatchFeatureConfig(
                         Feature.SIMPLE_BLOCK,
                         new SimpleBlockFeatureConfig(BlockStateProvider.of(MiscBlocks.CHARCOAL_SAPLING.getDefaultState())),
-                        List.of(Blocks.SOUL_SOIL)
+                        List.of(Blocks.SOUL_SOIL, Blocks.SOUL_SAND)
                 )
         );
+
+        register(context, SOUL_SAND_LOOSE_DISK_KEY, Feature.DISK, new DiskFeatureConfig(
+                PredicatedStateProvider.of(SoulSandstoneBlocks.SOUL_SAND_LOOSE),
+                BlockPredicate.matchingBlocks(List.of(Blocks.SOUL_SAND, Blocks.SOUL_SOIL)),
+                UniformIntProvider.create(2, 3), 2
+        ));
+
+        register(context, CRIMSON_MYCELIAL_THREADS_MULTIFACE_GROWTH_KEY, Feature.MULTIFACE_GROWTH, new MultifaceGrowthFeatureConfig(
+                (MultifaceGrowthBlock) CrimsonBlocks.CRIMSON_MYCELIAL_THREADS,
+                20,
+                true,
+                true,
+                true,
+                1F,
+                RegistryEntryList.of(
+                        Block::getRegistryEntry,
+                        Blocks.NETHERRACK,
+                        Blocks.NETHER_WART_BLOCK,
+                        Blocks.CRIMSON_NYLIUM,
+                        Blocks.CRIMSON_STEM,
+                        Blocks.NETHER_BRICKS,
+                        Blocks.CRACKED_NETHER_BRICKS,
+                        Blocks.BLACKSTONE,
+                        Blocks.POLISHED_BLACKSTONE_BRICKS,
+                        Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS,
+                        BlackstoneBlocks.BLACKSTONE_COBBLED,
+                        Blocks.BASALT,
+                        Blocks.POLISHED_BASALT,
+                        CrimsonBlocks.CRIMSON_NETHERRACK,
+                        CrimsonBlocks.CRIMSON_NETHERRACK_CRACKED,
+                        CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICKS,
+                        CrimsonBlocks.CRIMSON_BLACKSTONE_POLISHED_LARGE_BRICKS_CRACKED,
+                        CrimsonBlocks.CRIMSON_NETHER_BRICKS,
+                        CrimsonBlocks.CRIMSON_NETHER_BRICKS_CRACKED,
+                        NetherstoneBlocks.NETHERSTONE_COBBLED,
+                        Blocks.RED_NETHER_BRICKS,
+                        MiscBlocks.RED_NETHER_BRICKS_CRACKED,
+                        CrimsonBlocks.CRIMSON_RED_NETHER_BRICKS,
+                        CrimsonBlocks.CRIMSON_RED_NETHER_BRICKS_CRACKED,
+                        CrimsonstoneBlocks.CRIMSONSTONE_COBBLED
+                )
+        ));
 
     }
 

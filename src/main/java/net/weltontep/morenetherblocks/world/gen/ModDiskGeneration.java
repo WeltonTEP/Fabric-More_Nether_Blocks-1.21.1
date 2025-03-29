@@ -6,11 +6,9 @@ import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.gen.GenerationStep;
 import net.weltontep.morenetherblocks.world.ModPlacedFeatures;
 
-public class ModVegetationGeneration {
-    public static void generateVegetation() {
+public class ModDiskGeneration {
+    public static void generateDisks() {
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SOUL_SAND_VALLEY),
-                GenerationStep.Feature.UNDERGROUND_DECORATION, ModPlacedFeatures.CHARCOAL_SAPLING_PLACED_KEY);
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.CRIMSON_FOREST),
-                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.CRIMSON_MYCELIAL_THREADS_MULTIFACE_GROWTH_PLACED_KEY);
+                GenerationStep.Feature.LOCAL_MODIFICATIONS, ModPlacedFeatures.SOUL_SAND_LOOSE_DISK_PLACED_KEY);
     }
 }

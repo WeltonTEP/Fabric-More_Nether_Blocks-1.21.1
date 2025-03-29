@@ -82,7 +82,7 @@ public class ModOreGeneration {
                 ModPlacedFeatures.CRIMSONSTONE_POLISHED_CUT_BRICK_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.CRIMSON_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.CRIMSONSTONE_POLISHED_CUT_BRICK_CRACKED_ORE_PLACED_KEY);
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.CRIMSON_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WARPED_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.WARPED_NETHERRACK_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WARPED_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.WARPED_NETHERRACK_CRACKED_ORE_PLACED_KEY);

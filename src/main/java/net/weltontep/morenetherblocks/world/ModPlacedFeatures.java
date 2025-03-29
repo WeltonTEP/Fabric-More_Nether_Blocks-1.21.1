@@ -5,6 +5,8 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
+import net.minecraft.world.Heightmap;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.placementmodifier.*;
@@ -67,6 +69,12 @@ public class ModPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> CHARCOAL_PLACED_KEY = registryKey("charcoal_placed");
     public static final RegistryKey<PlacedFeature> CHARCOAL_SAPLING_PLACED_KEY = registryKey("charcoal_sapling_placed");
+
+    public static final RegistryKey<PlacedFeature> SOUL_SAND_LOOSE_DISK_PLACED_KEY = registryKey("soul_sand_loose_placed");
+
+    public static final RegistryKey<PlacedFeature> CRIMSON_MYCELIAL_THREADS_MULTIFACE_GROWTH_PLACED_KEY = registryKey("crimson_mycelial_threads_multiface_growth");
+
+    public static final RegistryKey<PlacedFeature> CRIMSON_TENDRILS_PLACED_KEY = registryKey("crimson_tendrils_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -323,10 +331,20 @@ public class ModPlacedFeatures {
 
         register(context, CHARCOAL_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHARCOAL_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
-                        PlacedFeatures.createCountExtraModifier(2, 0.1f, 2), MiscBlocks.CHARCOAL_SAPLING));
+                        PlacedFeatures.createCountExtraModifier(20, 0.1f, 2), MiscBlocks.CHARCOAL_SAPLING));
 
         register(context, CHARCOAL_SAPLING_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHARCOAL_SAPLING_KEY),
-                RarityFilterPlacementModifier.of(16), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+                CountPlacementModifier.of(10), SquarePlacementModifier.of(), PlacedFeatures.BOTTOM_TO_120_RANGE, BiomePlacementModifier.of()
+        );
+
+        register(context, SOUL_SAND_LOOSE_DISK_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SOUL_SAND_LOOSE_DISK_KEY),
+                CountPlacementModifier.of(25),SquarePlacementModifier.of(),PlacedFeatures.BOTTOM_TO_120_RANGE, BiomePlacementModifier.of()
+        );
+
+        register(context, CRIMSON_MYCELIAL_THREADS_MULTIFACE_GROWTH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRIMSON_MYCELIAL_THREADS_MULTIFACE_GROWTH_KEY),
+                CountPlacementModifier.of(UniformIntProvider.create(104, 157)),
+                PlacedFeatures.BOTTOM_TO_120_RANGE, SquarePlacementModifier.of(), SurfaceThresholdFilterPlacementModifier.of(Heightmap.Type.OCEAN_FLOOR_WG, Integer.MIN_VALUE, -13), BiomePlacementModifier.of());
+
     }
 
     public static RegistryKey<PlacedFeature> registryKey(String name) {

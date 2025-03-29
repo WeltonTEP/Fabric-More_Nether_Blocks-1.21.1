@@ -5,11 +5,11 @@
 	"name": "MoreNetherBlocks",
 	"description": "Adds more nether blocks.",
 	"authors": [
-		"Me!"
+		"WeltonTEP"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/WeltonTEP/Fabric-More_Nether_Blocks-1.21.1/tree/master/src/main/java/net/weltontep/morenetherblocks"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/morenetherblocks/icon.png",
